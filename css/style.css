@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Noto+Sans+Cypro+Minoan&family=Nunito+Sans:wght@200&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+img{
+    width: 100%;
+}
+li {
+    list-style-type: none;
+}
+
+
+.logo {
+    width: 10rem;
+}
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.nav{
+    display: flex;
+    transition: 0.2s;
+    
+}
+.nav li {
+    background-color: #efe2cb;
+    padding: 1rem 4rem;
+
+}
+.nav li:hover {
+    background-color: #efd8af;
+    transition: 0.2s;
+}
+
+/* main */
+
+.titulo{
+    font-family: 'Nunito Sans', sans-serif;
+    background-color:  #efe2cb;
+    color: #fdf9f4;
+    font-size: 2.7rem;
+    transition: 0.3s;
+}
+.titulo:hover{
+    background-color:  #efd8af;
+    
+}
+
+.grilla{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "imgLampara parrafo  imgPerchero"
+    "imgLampara imgTabla  imgPerchero ";
+}
+.parrafo{
+    grid-area: parrafo;
+    background-color:  #d4d4c8;
+    color: rgb(71, 27, 27);
+    padding: 2rem;
+    transition: 0.8s;
+
+}
+
+.parrafo:hover {
+    background-color: #efe2cb;
+    margin-top: -5rem;
+}  
+
+.imgLampara{
+    grid-area: imgLampara;
+}
+.imgTabla{
+    grid-area: imgTabla;
+    
+}
+.imgPerchero{
+    grid-area: imgPerchero;
+}
+
+/* articulo */ 
+.article{
+    padding: 2rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    background-color: #f3f1ed;
+}
+.formasDePago{
+    display: flex;
+    flex-direction: row;
+    padding: .5rem;
+}
+.efectivo{
+    margin-left: -6rem;
+    padding: .5rem;
+}
+.tarjeta{
+    margin-left: 5rem;
+    padding: .5rem;
+}
+
+/*footer*/
+
+footer{
+    display:grid;
+    padding: 2rem;
+    grid-template-areas: 
+    "productos  info "
+    "productos  redes";
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr;
+  
+}
+.productos{
+    grid-area: productos;
+    margin-top: 0.5rem;
+    
+}
+.productos nav{
+    padding: 1rem;
+    margin-left: 5rem;
+}
+.productos nav li{
+    padding: 0.2rem;
+}
+.info{
+    grid-area: info;
+    padding: 1rem;
+    text-align: center;
+}
+.redes{
+    grid-area: redes;
+    text-align: center;
+}
+.iconoRedes{
+    width: 3rem;    
+}
+
+
+
+/* iluminacion */
+
+.productosIluminacion{
+    display: flex;
+    flex-direction: column;
+}
+
+.lamparas{
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr;
+    grid-template-areas: 
+    "titulo cromo estante"
+    ".      tripode tripode";
+    
+}
+.tituloLamparaDePie{
+    grid-area: titulo;
+}
+.cromo{
+    grid-area: cromo;
+}
+.estante{
+    grid-area: estante;
+}
+.tripode{
+    grid-area: tripode;
+}
+.grillaIluminacion{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+
+
+/* contacto */
+
+.botonEnviar{
+    background-color: #d4d4c8;
+    border: #efe2cb;
+}
+
+.botonEnviar:hover {
+    background-color: #efd8af;
+
+}
+
+.contacto{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.form{
+    padding: 1rem;
+}
+
+.contactoRedes{
+    display: flex;
+}
+.contactoRedes a{
+    margin-top: 3rem;
+    margin-left: 3rem;
+}
+.contactoUbicacion{
+    padding: 1rem;
+}
