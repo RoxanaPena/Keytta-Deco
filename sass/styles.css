@@ -1,0 +1,249 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Noto+Sans+Cypro+Minoan&family=Nunito+Sans:wght@200&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+img {
+  width: 100%;
+}
+
+li {
+  list-style-type: none;
+}
+
+.titulo {
+  font-family: "Nunito Sans", sans-serif;
+  background-color: #efe2cb;
+  color: #fdf9f4;
+  font-size: 2.8rem;
+  transition: 0.6s;
+}
+.titulo:hover {
+  background-color: #efd8af;
+  font-size: 2rem;
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+header .logo {
+  width: 10rem;
+}
+header .nav {
+  display: flex;
+  padding: 1rem;
+  gap: 1rem;
+}
+header .nav li {
+  background-color: #efe2cb;
+  padding: 1rem 4rem;
+  transition: 0.3s;
+}
+header .nav li:hover {
+  background-color: #efd8af;
+  font-size: 1.2rem;
+}
+header .nav li:hover a {
+  color: rgb(71, 27, 27);
+}
+
+.grilla {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "imgLampara parrafo  imgPerchero" "imgLampara imgTabla  imgPerchero ";
+}
+.grilla .parrafo {
+  grid-area: parrafo;
+  background-color: #d4d4c8;
+  color: rgb(71, 27, 27);
+  padding: 2rem;
+  transition: 0.8s;
+}
+.grilla .parrafo:hover {
+  background-color: #efe2cb;
+  margin-top: -5rem;
+}
+.grilla .imgLampara {
+  grid-area: imgLampara;
+}
+.grilla .imgTabla {
+  grid-area: imgTabla;
+}
+.grilla .imgPerchero {
+  grid-area: imgPerchero;
+}
+
+.cocina {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  grid-template-rows: 1fr;
+  grid-template-areas: "cocinaInfo cocinaImg";
+  padding: 1rem;
+  gap: 1rem;
+}
+.cocina .cocinaInfo {
+  grid-area: cocinaInfo;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.cocina .cocinaInfo h2 {
+  margin-right: 12rem;
+}
+.cocina .cocinaInfo .cocinaPrecio {
+  display: flex;
+  justify-content: space-evenly;
+}
+.cocina .cocinaInfo .cocinaPrecio p {
+  margin-top: 1rem;
+  margin-right: 5rem;
+  transition: 0.5s;
+}
+.cocina .cocinaInfo .cocinaPrecio p:hover {
+  font-size: 2rem;
+}
+.cocina .cocinaImg {
+  grid-area: cocinaImg;
+  display: flex;
+  gap: 1rem;
+  width: 20rem;
+}
+
+.contacto {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  padding: 1rem;
+  justify-content: space-evenly;
+}
+.contacto .contactoInformacion {
+  padding: 1rem;
+}
+
+.decoracion {
+  padding: 1rem;
+  gap: 1rem;
+}
+.decoracion .perchero {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  grid-template-areas: "percheroInfo percheroImg";
+  align-items: center;
+}
+.decoracion .perchero .percheroInfo {
+  grid-area: percheroInfo;
+  display: flex;
+  flex-direction: column;
+}
+.decoracion .perchero .percheroImg {
+  grid-area: percheroImg;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.decoracion .portaMacetas {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  grid-template-areas: "macetasInfo macetasImg";
+  align-items: center;
+}
+.decoracion .portaMacetas .macetasInfo {
+  grid-area: macetasInfo;
+  display: flex;
+  flex-direction: column;
+}
+.decoracion .portaMacetas .macetasImg {
+  grid-area: macetasImg;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+article {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #f3ecdf;
+  margin: 0.5rem;
+  text-align: center;
+  padding: 0.5rem;
+  box-shadow: 1 2 4rem rgb(185, 129, 50);
+}
+article .formasDePago {
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+  padding: 0.5rem;
+}
+article .efectivo {
+  margin-left: -5rem;
+  font-size: 0.7rem;
+}
+
+footer {
+  display: grid;
+  grid-template-areas: "productos info" "prodcutos redes";
+  grid-template-columns: 30% 70%;
+  align-items: center;
+}
+footer .produtos {
+  grid-area: productos;
+}
+footer .info {
+  grid-area: info;
+  text-align: center;
+}
+footer .redes {
+  grid-area: redes;
+  text-align: center;
+}
+
+/* iluminacion */
+.productosIluminacion {
+  display: flex;
+  flex-direction: column;
+}
+
+.lamparas {
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr;
+  grid-template-areas: "titulo cromo estante" ".      tripode tripode";
+}
+
+.tituloLamparaDePie {
+  grid-area: titulo;
+}
+
+.cromo {
+  grid-area: cromo;
+}
+
+.estante {
+  grid-area: estante;
+}
+
+.tripode {
+  grid-area: tripode;
+}
+
+.grillaIluminacion {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}/*# sourceMappingURL=styles.css.map */

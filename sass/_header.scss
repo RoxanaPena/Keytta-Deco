@@ -1,0 +1,29 @@
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    .logo {
+        width: 10rem;
+    }
+    .nav{
+        display: flex;
+        padding: 1rem;
+        gap: 1rem;
+
+        li {
+            background-color: #efe2cb;
+            padding: 1rem 4rem;
+            transition: 0.3s;
+
+            &:hover {
+                background-color: #efd8af;
+                font-size: 1.2rem;
+
+                a{
+                    color: rgb(71, 27, 27);
+                }
+            }   
+        }
+    }
+}

@@ -1,0 +1,27 @@
+footer{
+    display: grid;
+    grid-template-areas:
+    "productos info"
+    "prodcutos redes";
+    grid-template-columns: 30% 70%;
+    align-items: center;
+
+
+
+
+    .produtos{
+        grid-area: productos; 
+    }
+    .info{
+        grid-area: info;
+        text-align: center;
+        
+    }
+    .redes{
+        grid-area: redes;
+        text-align: center;
+    }
+
+}
+
+

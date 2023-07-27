@@ -6,8 +6,7 @@
     <title>Keytta Deco - Contacto</title>
     <link rel="shortcut icon" href="../img/logos/logo_favicon.jpg" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/style.css">
-
+    <link rel="stylesheet" href="../sass/styles.css">
 </head>
 <body>
     <header>
@@ -30,7 +29,7 @@
             <h1 class="titulo">Contacto</h1>
         </section>
         <section class="contacto">
-            <div class="contactoUbicacion">
+            <div class="contactoInformacion">
                 <p>Encontranos en Fiorito 1832, Lomas de zamora.</p>
                 <p>Nuestro Horario de atención es de Lunes a Sabados de 9 a 19 hs.</p>
                 <div class="contactoRedes">
@@ -38,38 +37,66 @@
                     <a href=""><img src="" alt="Logo de Instagram"></a>
                     <a href=""><img src="" alt="Logo de WhatsApp"></a>
                 </div>
-            </div>
-            <div>
-                <form class="form">
-                    <div class="form-group">
-                        <label for="inputAddress">Nombre</label>
-                        <input type="text" class="form-control" id="inputAddress" placeholder="Escribe tu nombre">
-                    </div>
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="inputEmail4">Email</label>
-                            <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+            </div> 
+            <form >
+                <section>
+                    <p>Nosotros te contactamos, dejanos tus datos para comunicarnos con vos.</p>
+                </section>
+                <section class="form">
+                    <div class="row mb-3">
+                        <label for="input" class="col-sm-2 col-form-label">Nombre</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control">
                         </div>
                     </div>
-                    <div class="form-group">
-                        <label for="inputAddress">Para saber el presupuesto de Envio, Agrega tu direccion:</label>
-                        <input type="text" class="form-control" id="inputAddress" placeholder="1234 Calle, Localidad.">
-                    </div>
-                    <div class="form-group">
-                        <input type="text" class="form-control"  placeholder="Motivo de contacto">
-                    </div>
-                    <div class="form-group">
-                        <textarea class="form-control" rows="5" ></textarea>
-                    </div>
-                    <div class="form-group">
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" id="gridCheck">
-                            <label class="form-check-label" for="gridCheck">Acepto que me contacten.</label>
+                    <div class="row mb-3">
+                        <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+                        <div class="col-sm-10">
+                            <input type="email" class="form-control" id="inputEmail3">
                         </div>
                     </div>
-                    <button type="submit" class="btn btn-primary botonEnviar">Enviar</button>
-                </form>
-            </div>
+                    <div class="row mb-3">
+                        <label for="inputPassword3" class="col-sm-2 col-form-label">Direccion</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" placeholder=" *si usted desea saber el costo de envios.">
+                        </div>
+                    </div>
+                    <fieldset class="row mb-3">
+                        <legend class="col-form-label col-sm-2 pt-0">Motivo</legend>
+                        <div class="col-sm-10">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                                <label class="form-check-label" for="gridRadios1">
+                                    Realice una Compra
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                                <label class="form-check-label" for="gridRadios2">
+                                    Por envios
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3">
+                                <label class="form-check-label" for="gridRadios3">
+                                    otro
+                                </label>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <div class="row mb-3">
+                        <div class="col-sm-10 offset-sm-2">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="gridCheck1">
+                                <label class="form-check-label" for="gridCheck1">
+                                    Acepto que me contacten.
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Sign in</button>
+                </section> 
+            </form>
         </section>
     </main>
 

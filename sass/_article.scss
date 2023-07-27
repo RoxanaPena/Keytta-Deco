@@ -1,23 +1,23 @@
+
 article{
-    padding: 2rem;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    background-color: #f3ecdf;
+    margin: .5rem;
     text-align: center;
-    background-color: #f3f1ed;
+    padding: .5rem;
+    box-shadow: 1 2 4rem rgb(185, 129, 50);
 
     .formasDePago{
         display: flex;
         flex-direction: row;
+        gap: 3rem;
         padding: .5rem;
     }
     .efectivo{
-        margin-left: -6rem;
-        padding: .5rem;
+        margin-left: -5rem;
+        font-size: 0.7rem;
     }
-    .tarjeta{
-        margin-left: 5rem;
-        padding: .5rem;
-    }
-}
 
+}

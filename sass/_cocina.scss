@@ -1,0 +1,43 @@
+.cocina{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "cocinaInfo cocinaImg";
+    padding: 1rem;
+    gap: 1rem;
+
+
+    .cocinaInfo{
+        grid-area: cocinaInfo;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+
+        & h2{
+            margin-right: 12rem;
+        }
+
+        .cocinaPrecio{
+            display: flex;
+            justify-content: space-evenly;
+
+            p{
+                margin-top: 1rem;
+                margin-right: 5rem;
+                transition: 0.5s;
+
+                &:hover{
+                    font-size: 2rem;
+                }
+            }
+        }
+    }
+    .cocinaImg{
+        grid-area: cocinaImg;
+        display: flex;
+        gap: 1rem;
+        width: 20rem;
+    }
+}

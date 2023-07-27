@@ -1,0 +1,48 @@
+.decoracion{
+    padding: 1rem;
+    gap: 1rem;
+
+    .perchero{
+        display: grid;
+        grid-template-columns: 30% 70%;
+        grid-template-areas: 
+        "percheroInfo percheroImg";
+        align-items: center;
+
+        .percheroInfo{
+            grid-area: percheroInfo;
+            display: flex;
+            flex-direction: column;
+        }
+        .percheroImg{
+            grid-area: percheroImg;
+            display: grid;
+            gap: 1rem;
+            grid-template-columns: 1fr 1fr 1fr;
+            
+        }
+    }
+
+    .portaMacetas{
+        display: grid;
+        grid-template-columns: 30% 70%;
+        grid-template-areas: 
+        "macetasInfo macetasImg";
+        align-items: center;
+
+        .macetasInfo{
+            grid-area: macetasInfo;
+
+            display: flex;
+            flex-direction: column;
+        }
+        .macetasImg{
+            grid-area: macetasImg;
+            display: grid;
+            gap: 1rem;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+
+    }
+
+}

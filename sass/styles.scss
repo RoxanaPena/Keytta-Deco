@@ -1,3 +1,22 @@
+//tipografias
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Noto+Sans+Cypro+Minoan&family=Nunito+Sans:wght@200&display=swap');
+
+@import "./reset";
+@import "./header";
+
+//pages
+@import "./nosotros";
+@import "./cocina";
+@import "./contacto";
+@import "./decoracion";
+
+
+@import "./article";
+@import "./footer";
+
+/* iluminacion */
+
 .productosIluminacion{
     display: flex;
     flex-direction: column;
