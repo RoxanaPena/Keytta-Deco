@@ -2,24 +2,45 @@ footer{
     display: grid;
     grid-template-areas:
     "productos info"
-    "prodcutos redes";
+    "productos redes";
     grid-template-columns: 30% 70%;
-    align-items: center;
 
-
-
-
-    .produtos{
+    .productos{
         grid-area: productos; 
+        margin-left: 6rem;
+
+        h3{
+            margin-top: 1rem;
+        }
+
+        nav{
+            margin-left: 8rem;
+
+            ul{
+                li:hover{
+                    font-size: 1.3rem;
+                    transition: 0.5s;
+                }
+            }
+        }
+
     }
     .info{
         grid-area: info;
-        text-align: center;
+        font-size: medium;
+        margin-top: 2rem;
+        margin-left: 6rem;
         
     }
     .redes{
         grid-area: redes;
-        text-align: center;
+        display: flex;
+        justify-content: space-evenly;
+        
+        
+        .img-redes{
+            width: 2.5rem;
+        }
     }
 
 }

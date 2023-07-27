@@ -10,39 +10,9 @@
 @import "./cocina";
 @import "./contacto";
 @import "./decoracion";
+@import "./iluminacion"; 
+@import "./informacion";
 
 
 @import "./article";
 @import "./footer";
-
-/* iluminacion */
-
-.productosIluminacion{
-    display: flex;
-    flex-direction: column;
-}
-
-.lamparas{
-    display: grid;
-    grid-template-columns: 1fr 2fr 2fr;
-    grid-template-areas: 
-    "titulo cromo estante"
-    ".      tripode tripode";
-    
-}
-.tituloLamparaDePie{
-    grid-area: titulo;
-}
-.cromo{
-    grid-area: cromo;
-}
-.estante{
-    grid-area: estante;
-}
-.tripode{
-    grid-area: tripode;
-}
-.grillaIluminacion{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}

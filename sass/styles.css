@@ -67,6 +67,8 @@ header .nav li:hover a {
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr;
   grid-template-areas: "imgLampara parrafo  imgPerchero" "imgLampara imgTabla  imgPerchero ";
+  gap: 0.7rem;
+  margin: 1rem;
 }
 .grilla .parrafo {
   grid-area: parrafo;
@@ -137,6 +139,16 @@ header .nav li:hover a {
   padding: 1rem;
 }
 
+.imgContacto {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.imgContacto img {
+  width: 12rem;
+  height: 12rem;
+  padding: 0;
+}
+
 .decoracion {
   padding: 1rem;
   gap: 1rem;
@@ -176,74 +188,69 @@ header .nav li:hover a {
   grid-template-columns: 1fr 1fr 1fr;
 }
 
+/* iluminacion */
+.iluminacion {
+  padding: 1rem;
+}
+.iluminacion .lamparas {
+  display: flex;
+  gap: 5rem;
+}
+.iluminacion .lamparas .lamparasInfo {
+  padding: 1rem;
+}
+.linkContacto:hover {
+  font-size: 1.5rem;
+  color: rosybrown;
+  transition: 0.5s;
+}
+
 article {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
-  background-color: #f3ecdf;
-  margin: 0.5rem;
-  text-align: center;
-  padding: 0.5rem;
-  box-shadow: 1 2 4rem rgb(185, 129, 50);
+  margin: 1rem;
+  background-color: #d4d4c8;
 }
-article .formasDePago {
-  display: flex;
-  flex-direction: row;
-  gap: 3rem;
-  padding: 0.5rem;
+article div {
+  padding: 1rem;
+  margin-top: 1rem;
 }
-article .efectivo {
-  margin-left: -5rem;
-  font-size: 0.7rem;
+article div a :hover {
+  font-size: 1.2rem;
+  transition: 0.4s;
 }
 
 footer {
   display: grid;
-  grid-template-areas: "productos info" "prodcutos redes";
+  grid-template-areas: "productos info" "productos redes";
   grid-template-columns: 30% 70%;
-  align-items: center;
 }
-footer .produtos {
+footer .productos {
   grid-area: productos;
+  margin-left: 6rem;
+}
+footer .productos h3 {
+  margin-top: 1rem;
+}
+footer .productos nav {
+  margin-left: 8rem;
+}
+footer .productos nav ul li:hover {
+  font-size: 1.3rem;
+  transition: 0.5s;
 }
 footer .info {
   grid-area: info;
-  text-align: center;
+  font-size: medium;
+  margin-top: 2rem;
+  margin-left: 6rem;
 }
 footer .redes {
   grid-area: redes;
-  text-align: center;
-}
-
-/* iluminacion */
-.productosIluminacion {
   display: flex;
-  flex-direction: column;
+  justify-content: space-evenly;
 }
-
-.lamparas {
-  display: grid;
-  grid-template-columns: 1fr 2fr 2fr;
-  grid-template-areas: "titulo cromo estante" ".      tripode tripode";
-}
-
-.tituloLamparaDePie {
-  grid-area: titulo;
-}
-
-.cromo {
-  grid-area: cromo;
-}
-
-.estante {
-  grid-area: estante;
-}
-
-.tripode {
-  grid-area: tripode;
-}
-
-.grillaIluminacion {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+footer .redes .img-redes {
+  width: 2.5rem;
 }/*# sourceMappingURL=styles.css.map */

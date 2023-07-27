@@ -9,6 +9,17 @@
             padding: 1rem;
     }
 }
+.imgContacto{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+    img{
+        width: 12rem;
+        height: 12rem;
+        padding: 0;
+    }
+        
+}
 
 
 

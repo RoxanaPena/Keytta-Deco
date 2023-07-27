@@ -1,23 +1,17 @@
-
 article{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
-    background-color: #f3ecdf;
-    margin: .5rem;
-    text-align: center;
-    padding: .5rem;
-    box-shadow: 1 2 4rem rgb(185, 129, 50);
+    margin: 1rem;
+    background-color: #d4d4c8;
 
-    .formasDePago{
-        display: flex;
-        flex-direction: row;
-        gap: 3rem;
-        padding: .5rem;
-    }
-    .efectivo{
-        margin-left: -5rem;
-        font-size: 0.7rem;
-    }
+    div{
+        padding: 1rem;
+        margin-top: 1rem;
 
+        a :hover{
+            font-size: 1.2rem;
+            transition: 0.4s;
+        }
+    }
 }
