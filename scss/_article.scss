@@ -1,0 +1,23 @@
+article{
+    padding: 2rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    background-color: #f3f1ed;
+
+    .formasDePago{
+        display: flex;
+        flex-direction: row;
+        padding: .5rem;
+    }
+    .efectivo{
+        margin-left: -6rem;
+        padding: .5rem;
+    }
+    .tarjeta{
+        margin-left: 5rem;
+        padding: .5rem;
+    }
+}
+

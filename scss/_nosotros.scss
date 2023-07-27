@@ -1,0 +1,47 @@
+
+.titulo{
+    font-family: 'Nunito Sans', sans-serif;
+    background-color:  #efe2cb;
+    color: #fdf9f4;
+    font-size: 2.7rem;
+    transition: 0.3s;
+
+    &:hover{
+            background-color:  #efd8af;
+    }
+}
+
+.grilla{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "imgLampara parrafo  imgPerchero"
+    "imgLampara imgTabla  imgPerchero ";
+    
+}
+.parrafo{
+    grid-area: parrafo;
+    background-color:  #d4d4c8;
+    color: rgb(71, 27, 27);
+    padding: 2rem;
+    transition: 0.8s;
+
+}
+
+.parrafo:hover {
+    background-color: #efe2cb;
+    margin-top: -5rem;
+}  
+
+.imgLampara{
+    grid-area: imgLampara;
+}
+.imgTabla{
+    grid-area: imgTabla;
+    
+}
+.imgPerchero{
+    grid-area: imgPerchero;
+}
+

@@ -1,0 +1,30 @@
+
+.botonEnviar{
+    background-color: #d4d4c8;
+    border: #efe2cb;
+}
+
+.botonEnviar:hover {
+    background-color: #efd8af;
+
+}
+
+.contacto{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.form{
+    padding: 1rem;
+}
+
+.contactoRedes{
+    display: flex;
+}
+.contactoRedes a{
+    margin-top: 3rem;
+    margin-left: 3rem;
+}
+.contactoUbicacion{
+    padding: 1rem;
+}
