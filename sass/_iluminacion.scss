@@ -1,17 +1,91 @@
-/* iluminacion */
-
 .iluminacion{
     padding: 1rem;
-
-    .lamparas{
-        display: flex;
-        gap: 5rem;
-
-        .lamparasInfo{
-            padding: 1rem;
     
+    .lamparas{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-areas: 
+        "precio  cromo"
+        "precio  estante"
+        "tripode tripode";
+        gap: 1rem;
+        margin: 1rem;
+
+        h3{
+            margin-bottom: 1rem;
         }
-        .lamparaImg{
+        .lamparasPrecio{
+            grid-area: precio;
+            margin-left: 1rem;
+            margin-top: 2rem;
+
+            p{
+                margin-top: 6rem;
+            }
+        }
+        .cromo{
+            grid-area: cromo;
+            display: flex;
+            flex-direction: column;
+            margin-left: 3rem;
+
+            div{
+                display: flex;
+                gap: 3rem;
+                width: 40%;
+                margin-left: 3rem;
+            }
+        }
+        .estante{
+            grid-area: estante;
+            display: flex;
+            flex-direction: column;
+            margin-left: 3rem;
+
+            div{
+                display: flex;
+                gap: 3rem;
+                width: 40%;
+                margin-left: 3rem;
+            }
+        }
+        .tripode{
+            grid-area: tripode;
+            display: flex;
+            flex-direction: column;
+
+            div{
+                display: flex;
+                gap: 3rem;
+                width: 20%;
+                margin-left: 4rem;
+            }
+        }
+    }
+    .veladores{
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+        "tituloVeladores imgVeladores";
+        padding: 1rem;
+
+        .tituloVeladores{
+            grid-area: tituloVeladores;
+            
+            h2{
+                margin-top: 3rem;
+                margin-left: 3rem;
+            }
+            p{
+                margin-top: 13rem;
+            }
+        }
+        .imgVeladores{
+            grid-area: imgVeladores;
+            display: flex;
+            width: 22%;
+            gap: 3rem;
         }
     }
 }
