@@ -15,8 +15,11 @@
         flex-direction: column;
         justify-content: space-evenly;
 
-        & h2{
+        h2{
             margin-right: 12rem;
+        }
+        .cocina--titulo{
+            margin-right: 19rem;
         }
 
         .cocinaPrecio{

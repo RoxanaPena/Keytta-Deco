@@ -1,25 +1,41 @@
 .decoracion{
     padding: 1rem;
-    gap: 1rem;
+    margin: 1rem;
 
     .perchero{
         display: grid;
         grid-template-columns: 30% 70%;
         grid-template-areas: 
         "percheroInfo percheroImg";
-        align-items: center;
+
 
         .percheroInfo{
             grid-area: percheroInfo;
             display: flex;
             flex-direction: column;
+            gap: 1rem;
+            justify-content: space-around;
+
+            .percheroTitulo{
+                margin-left: 8rem;
+            }
+            .percheroPrecio{
+                display: flex;
+                margin-top: -10rem;
+                margin-left: 2rem;
+
+                p{
+                    margin-top: 1rem;
+                    margin-left: 2rem;
+                }
+            }
         }
         .percheroImg{
             grid-area: percheroImg;
-            display: grid;
-            gap: 1rem;
-            grid-template-columns: 1fr 1fr 1fr;
-            
+            display: flex;
+            gap: 3rem;
+            width: 25rem;
+            margin-left: 5rem;
         }
     }
 
@@ -28,21 +44,24 @@
         grid-template-columns: 30% 70%;
         grid-template-areas: 
         "macetasInfo macetasImg";
-        align-items: center;
 
         .macetasInfo{
             grid-area: macetasInfo;
-
             display: flex;
             flex-direction: column;
+            justify-content: space-around;
+
+            &-titulo{
+                margin-top: 10rem;
+                margin-left: 5rem;
+            }
         }
         .macetasImg{
-            grid-area: macetasImg;
             display: grid;
-            gap: 1rem;
-            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-columns: 1fr 1fr;
+            margin: 2rem;
+            gap: 2rem;
+            width: 50rem;
         }
-
     }
-
 }

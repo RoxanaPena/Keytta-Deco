@@ -6,7 +6,27 @@
     justify-content: space-evenly;
 
     .contactoInformacion{
-            padding: 1rem;
+        display: flex;
+        flex-direction: column;
+
+        p{
+            padding: 0.8rem;
+        }
+
+        .contactoRedes{
+            display: flex;
+            justify-content: space-evenly;
+
+            &-img{
+                width: 3.5rem; 
+                margin-top: 1rem;
+            }
+            .wspContacto{
+                margin-top: 1rem;
+            }
+
+
+        }
     }
 }
 .imgContacto{
@@ -16,9 +36,7 @@
     img{
         width: 12rem;
         height: 12rem;
-        padding: 0;
     }
-        
 }
 
 
