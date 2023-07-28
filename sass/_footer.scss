@@ -7,14 +7,14 @@ footer{
 
     .productos{
         grid-area: productos; 
-        margin-left: 6rem;
+        margin-left: 4rem;
 
         h3{
             margin-top: 1rem;
         }
 
         nav{
-            margin-left: 8rem;
+            margin-left: 6rem;
 
             ul{
                 li:hover{
@@ -29,7 +29,7 @@ footer{
         grid-area: info;
         font-size: medium;
         margin-top: 2rem;
-        margin-left: 6rem;
+        margin-left: 5rem;
         
     }
     .redes{
@@ -45,4 +45,20 @@ footer{
 
 }
 
-
+@media screen and (max-width: 700px) {
+    footer {
+        display: flex;
+        flex-direction: column;
+        .info{
+            margin-left: 2rem;
+            margin-bottom: 1rem;
+        }
+    
+    }
+}
+@media screen and (max-width: 490px) {
+    footer{
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+}

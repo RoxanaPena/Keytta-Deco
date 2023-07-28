@@ -20,7 +20,7 @@
             background-color: #efe2cb;
             margin-top: -5rem;
         }  
-    }
+    } 
     .imgLampara{
         grid-area: imgLampara;
     }
@@ -29,6 +29,41 @@
     }
     .imgPerchero{
         grid-area: imgPerchero;
+    }  
+    
+}
+
+
+@media screen and (max-width: 750px) {
+    .grilla{
+        display: grid;
+        grid-template-areas: 
+        "parrafo imgTabla"
+        "imgPerchero imgLampara";
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+
+        .parrafo{
+            padding: 2rem;
+            grid-area: parrafo;
+        }
+        .imgLampara{
+            grid-area: imgLampara;
+        }
+        .imgTabla{
+            grid-area: imgTabla;
+            margin-top: 2rem;
+        }
+        .imgPerchero{
+            grid-area: imgPerchero;
+        }
     }
+}
+@media screen and (max-width: 490px) {
+    .grilla{
+        display: flex;
+        flex-direction: column;
+    }
+    
 }
 
