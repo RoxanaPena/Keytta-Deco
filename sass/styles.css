@@ -80,7 +80,6 @@ header .nav li:hover a {
   }
   header .nav li {
     background-color: #efe2cb;
-    transition: 0.3s;
     padding: 0.4rem 0.8rem;
   }
 }
@@ -101,7 +100,6 @@ header .nav li:hover a {
   }
   header .nav li {
     background-color: #efe2cb;
-    transition: 0.3s;
     padding: 0.4rem 2rem;
   }
 }
@@ -122,7 +120,7 @@ header .nav li:hover a {
 }
 .grilla .parrafo:hover {
   background-color: #efe2cb;
-  margin-top: -5rem;
+  transform: scale(1.1);
 }
 .grilla .imgLampara {
   grid-area: imgLampara;
