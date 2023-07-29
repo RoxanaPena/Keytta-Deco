@@ -361,51 +361,46 @@ header .nav li:hover a {
 article {
   display: flex;
   justify-content: space-evenly;
-  align-items: center;
   background-color: #d4d4c8;
 }
 article div {
-  padding: 1rem;
-  margin-top: 1rem;
+  padding-top: 1rem;
 }
 article div a :hover {
   font-size: 1.2rem;
   transition: 0.4s;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 480px) {
   article {
-    display: flex;
     flex-direction: column;
-  }
-  article div {
-    padding: 0;
+    align-items: center;
   }
 }
 footer {
   display: grid;
   grid-template-areas: "productos info" "productos redes";
   grid-template-columns: 30% 70%;
+  padding: 1rem;
+  gap: 1rem;
 }
 footer .productos {
   grid-area: productos;
-  margin-left: 4rem;
-}
-footer .productos h3 {
-  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
 }
 footer .productos nav {
-  margin-left: 6rem;
+  margin-top: 2rem;
 }
-footer .productos nav ul li:hover {
+footer .productos nav li:hover {
   font-size: 1.3rem;
   transition: 0.5s;
 }
 footer .info {
   grid-area: info;
   font-size: medium;
-  margin-top: 2rem;
-  margin-left: 5rem;
+  margin-top: 1rem;
+  margin-left: 1rem;
 }
 footer .redes {
   grid-area: redes;
@@ -416,19 +411,14 @@ footer .redes .img-redes {
   width: 2.5rem;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 768px) {
+  footer {
+    grid-template-columns: 40% 60%;
+  }
+}
+@media screen and (max-width: 480px) {
   footer {
     display: flex;
     flex-direction: column;
-  }
-  footer .info {
-    margin-left: 2rem;
-    margin-bottom: 1rem;
-  }
-}
-@media screen and (max-width: 490px) {
-  footer {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
   }
 }/*# sourceMappingURL=styles.css.map */

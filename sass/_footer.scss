@@ -4,61 +4,52 @@ footer{
     "productos info"
     "productos redes";
     grid-template-columns: 30% 70%;
+    padding: 1rem;
+    gap: 1rem;
 
     .productos{
-        grid-area: productos; 
-        margin-left: 4rem;
-
-        h3{
-            margin-top: 1rem;
-        }
+        grid-area: productos;
+        display: flex;
+        justify-content: center;
 
         nav{
-            margin-left: 6rem;
-
-            ul{
+            margin-top: 2rem;
                 li:hover{
                     font-size: 1.3rem;
                     transition: 0.5s;
                 }
             }
-        }
-
     }
     .info{
         grid-area: info;
         font-size: medium;
-        margin-top: 2rem;
-        margin-left: 5rem;
+        margin-top: 1rem;
+        margin-left: 1rem;
         
     }
     .redes{
         grid-area: redes;
         display: flex;
         justify-content: space-evenly;
-        
-        
+
         .img-redes{
             width: 2.5rem;
         }
     }
-
 }
 
-@media screen and (max-width: 700px) {
-    footer {
+
+@media screen and (max-width: 768px) {
+    footer{
+        grid-template-columns: 40% 60% ;
+    }
+}
+
+@media screen and (max-width: 480px){
+    footer{
         display: flex;
         flex-direction: column;
-        .info{
-            margin-left: 2rem;
-            margin-bottom: 1rem;
-        }
-    
     }
 }
-@media screen and (max-width: 490px) {
-    footer{
-        margin-top: 1rem;
-        margin-bottom: 1rem;
-    }
-}
+
+
