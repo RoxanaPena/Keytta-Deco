@@ -6,6 +6,7 @@
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
   color: #5b4215;
+  outline: 2px solid red;
 }
 
 html {
@@ -44,6 +45,18 @@ header {
 }
 header .logo {
   width: 10rem;
+  animation: rotate-diagonal-1 0.8s linear reverse both;
+}
+@keyframes rotate-diagonal-1 {
+  0% {
+    transform: rotate3d(1, 1, 0, 0deg);
+  }
+  50% {
+    transform: rotate3d(1, 1, 0, -180deg);
+  }
+  100% {
+    transform: rotate3d(1, 1, 0, -360deg);
+  }
 }
 header .nav {
   flex-direction: row;
@@ -208,10 +221,7 @@ header .nav li:hover a {
 .imgContacto {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-}
-.imgContacto img {
-  width: 12rem;
-  height: 12rem;
+  gap: 1rem;
 }
 
 .decoracion {
