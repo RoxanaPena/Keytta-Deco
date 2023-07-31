@@ -1,0 +1,80 @@
+main{
+    .iluminacion{
+        margin: 2rem;
+
+        .lamparas{
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+
+            .lamparasPrecio{
+                margin: 1rem;
+                margin-top: 3rem;
+                
+            }
+            .lamparasImg{
+                margin: 1rem;
+                .cromo{
+                    display: grid;
+                    grid-template-columns: 1fr 2fr 2fr;
+
+                    div{
+                        display: flex;
+                        gap: 1rem;
+                        padding: 1rem;
+                    }
+                }
+                .estante{
+                    display: grid;
+                    grid-template-columns: 1fr 2fr 2fr;
+
+                    div{
+                        display: flex;
+                        gap: 1rem;
+                        padding: 1rem;
+                    }
+                }
+                .tripode{
+                    display: flex;
+                    flex-direction: column;
+
+                    div{
+                        display: grid;
+                        grid-template-columns: 1fr 1fr;
+                        gap: 1rem;
+                    }
+                }
+            }
+        }
+        
+        .veladores{
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+
+            .tituloVeladores{
+                margin: 1rem;
+                margin-top:3rem ;
+            }
+            .imgVeladores{
+                margin: 1rem;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 1rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 480px){
+    main{
+        .iluminacion{
+            .lamparas{
+                display: flex;
+                flex-direction: column;
+            }
+            .veladores{
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    } 
+}

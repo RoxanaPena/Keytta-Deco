@@ -200,47 +200,6 @@ main .cocina .cocinaImg {
     flex-direction: column;
   }
 }
-main .contacto {
-  display: flex;
-  margin: 1rem;
-  gap: 1rem;
-}
-main .contacto .contactoInformacion {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin-left: 2rem;
-}
-main .contacto .contactoInformacion .contactoRedes-img {
-  display: flex;
-  gap: 1rem;
-  width: 90px;
-  margin-left: 15rem;
-}
-main .contacto form {
-  margin-left: 10rem;
-}
-
-@media screen and (max-width: 768px) {
-  main {
-    margin: 1rem;
-  }
-  main .contacto {
-    flex-direction: column;
-  }
-  main .contacto form {
-    margin-left: 0;
-  }
-}
-footer .imgContacto {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 1rem;
-  display: flex;
-  align-items: center;
-  margin: 1rem;
-}
-
 main .decoracion {
   margin: 1rem;
 }
@@ -305,10 +264,117 @@ main .decoracion .portaMacetas .macetasImg {
     flex-direction: column;
   }
 }
+main .iluminacion {
+  margin: 2rem;
+}
+main .iluminacion .lamparas {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+main .iluminacion .lamparas .lamparasPrecio {
+  margin: 1rem;
+  margin-top: 3rem;
+}
+main .iluminacion .lamparas .lamparasImg {
+  margin: 1rem;
+}
+main .iluminacion .lamparas .lamparasImg .cromo {
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr;
+}
+main .iluminacion .lamparas .lamparasImg .cromo div {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+}
+main .iluminacion .lamparas .lamparasImg .estante {
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr;
+}
+main .iluminacion .lamparas .lamparasImg .estante div {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+}
+main .iluminacion .lamparas .lamparasImg .tripode {
+  display: flex;
+  flex-direction: column;
+}
+main .iluminacion .lamparas .lamparasImg .tripode div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+main .iluminacion .veladores {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+main .iluminacion .veladores .tituloVeladores {
+  margin: 1rem;
+  margin-top: 3rem;
+}
+main .iluminacion .veladores .imgVeladores {
+  margin: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+@media screen and (max-width: 480px) {
+  main .iluminacion .lamparas {
+    display: flex;
+    flex-direction: column;
+  }
+  main .iluminacion .veladores {
+    display: flex;
+    flex-direction: column;
+  }
+}
 .linkContacto:hover {
   font-size: 1.5rem;
   color: rosybrown;
   transition: 0.5s;
+}
+
+main .contacto {
+  display: flex;
+  margin: 1rem;
+  gap: 1rem;
+}
+main .contacto .contactoInformacion {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 2rem;
+}
+main .contacto .contactoInformacion .contactoRedes-img {
+  display: flex;
+  gap: 1rem;
+  width: 90px;
+  margin-left: 15rem;
+}
+main .contacto form {
+  margin-left: 10rem;
+}
+
+@media screen and (max-width: 768px) {
+  main {
+    margin: 1rem;
+  }
+  main .contacto {
+    flex-direction: column;
+  }
+  main .contacto form {
+    margin-left: 0;
+  }
+}
+footer .imgContacto {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 1rem;
+  display: flex;
+  align-items: center;
+  margin: 1rem;
 }
 
 article {
