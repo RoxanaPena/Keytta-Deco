@@ -1,67 +1,91 @@
-.decoracion{
-    padding: 1rem;
-    margin: 1rem;
+main{
+    .decoracion{
+        margin: 1rem;
 
-    .perchero{
-        display: grid;
-        grid-template-columns: 30% 70%;
-        grid-template-areas: 
-        "percheroInfo percheroImg";
-
-
-        .percheroInfo{
-            grid-area: percheroInfo;
-            display: flex;
-            flex-direction: column;
+        .perchero{
+            display: grid;
+            grid-template-columns: 1fr 3fr;
+            grid-template-areas: 
+            "percheroInfo percheroImg";
             gap: 1rem;
-            justify-content: space-around;
 
-            .percheroTitulo{
-                margin-left: 8rem;
+            .percheroInfo{
+            grid-area: percheroInfo;
+            margin-top: 4rem;
+            div{
+                margin: 2rem;
             }
-            .percheroPrecio{
-                display: flex;
-                margin-top: -10rem;
-                margin-left: 2rem;
 
-                p{
-                    margin-top: 1rem;
+                .percheroTitulo{
                     margin-left: 2rem;
                 }
             }
-        }
-        .percheroImg{
-            grid-area: percheroImg;
-            display: flex;
-            gap: 3rem;
-            width: 25rem;
-            margin-left: 5rem;
-        }
-    }
-
-    .portaMacetas{
-        display: grid;
-        grid-template-columns: 30% 70%;
-        grid-template-areas: 
-        "macetasInfo macetasImg";
-
-        .macetasInfo{
-            grid-area: macetasInfo;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-around;
-
-            &-titulo{
-                margin-top: 10rem;
-                margin-left: 5rem;
+            .percheroImg{
+                margin: 1rem;
+                grid-area: percheroImg;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 1rem;
             }
         }
-        .macetasImg{
+        .portaMacetas{
             display: grid;
-            grid-template-columns: 1fr 1fr;
-            margin: 2rem;
-            gap: 2rem;
-            width: 50rem;
+            grid-template-columns: 1fr 3fr;
+            grid-template-areas: 
+            "macetasInfo macetasImg";
+            gap: 1rem;
+
+            .macetasInfo{
+                grid-area: macetasInfo;
+
+                div{
+                    margin: 2rem;
+                }
+            }
+
+            .macetasImg{
+                margin: 1rem;
+                grid-area: macetasImg;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 1rem;
+            }
         }
     }
+}
+
+@media screen and (max-width: 768px){
+    main{
+        .decoracion{
+
+            .perchero{
+                .percheroImg{
+                    grid-template-columns: 1fr;
+                }
+            }
+
+            .portaMacetas{
+                .macetasImg{
+                    grid-template-columns: 1fr ;
+                }
+            }
+        }
+    }
+    
+}
+
+@media screen and (max-width: 480px){
+    main{
+        .decoracion{
+            .perchero{
+                display: flex;
+                flex-direction: column;
+            }
+            .portaMacetas{
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    }
+    
 }

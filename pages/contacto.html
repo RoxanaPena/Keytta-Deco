@@ -6,20 +6,21 @@
     <title>Keytta Deco - Contacto</title>
     <link rel="shortcut icon" href="../img/logos/logo_favicon.jpg" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../sass/styles.css">
 </head>
 <body>
     <header>
         <section>
-            <a href="../index.html"><img src="../img/logos/logo.jpg" alt="Logo de Keytta Deco" class="logo"></a>
+            <a href="../index.html"><img src="../img/logos/logo.jpg" alt="Logo de Keytta Deco" class="logo img-fluid"></a>
         </section>
         <nav>
             <ul class="nav">
-                <li class="rounded"><a href="../index.html">Nosotros</a></li>
-                <li class="rounded"><a href="./iluminacion.html">Iluminación</a></li>
-                <li class="rounded"><a href="./decoracion.html">Decoración</a></li>
-                <li class="rounded"><a href="./cocina.html">Cocina</a></li>
-                <li class="rounded"><a href="./contacto.html">Contacto</a></li>
+                <li class="rounded"  data-aos="fade-down" ><a href="../index.html">Nosotros</a></li>
+                <li class="rounded"  data-aos="fade-down"><a href="./iluminacion.html">Iluminación</a></li>
+                <li class="rounded"  data-aos="fade-down"><a href="./decoracion.html">Decoración</a></li>
+                <li class="rounded"  data-aos="fade-down"><a href="./cocina.html">Cocina</a></li>
+                <li class="rounded"  data-aos="fade-down"><a href="./contacto.html">Contacto</a></li>
             </ul>
         </nav>
     </header>
@@ -36,7 +37,7 @@
                     <p>Podes contactarnos a traves de:</p>
                     <div class="contactoRedes-img">
                         <a href="https://www.instagram.com/keyttadeco/?__coig_restricted=1" target="_blank"><img src="../img/logos/instagram.png" alt="Icono Instagram" class="img-fluid" ></a>
-                        <a href=""><img src="../img/logos/wsp1.png" alt="Icono de WhatsApp" class="img-fluid wspContacto"></a>
+                        <a href=""><img src="../img/logos/wsp1.png" alt="Icono de WhatsApp" class="img-fluid"></a>
                     </div>
                 </div>
             </div> 
@@ -113,7 +114,7 @@
         <div>
             <a href="./contacto.html"><p>¡Quiero Contactarme!</p></a>
         </div>
-    </article> 
+    </article>
 
     <footer>
         <section class="productos">
@@ -129,13 +130,17 @@
             </nav>
         </section>
         <section class="imgContacto">
-            <a href="./cocina.html">  <img src="../img/decoracion/Cocina/tc-arriba.jpg" alt="img Tabla de cocina" class="img-fluid rounded float-start shadow mb-5 bg-body" ></a>
-            <a href="./decoracion.html"><img src="../img/decoracion/Percheros/p-con-objetos.jpg" alt="img perchero" class="img-fluid rounded float-start shadow mb-5 bg-body "></a>
-            <a href="./iluminacion.html"><img src="../img/iluminacion/veladores/v-tripode.jpg" alt="img velador" class="img-fluid rounded float-start shadow mb-5 bg-body"></a>
-            <a href="./iluminacion.html"><img src="../img/iluminacion/lamparas_de_pie/tripode/tripode-blanco.jpg" alt="img Lampara de Pie" class="img-fluid rounded float-start shadow mb-5 bg-body"></a>
+            <a href="./cocina.html">  <img src="../img/decoracion/Cocina/tc-arriba.jpg" alt="img Tabla de cocina" class="img-fluid rounded float-start shadow mb-5 bg-body"  data-aos="flip-up" ></a>
+            <a href="./decoracion.html"><img src="../img/decoracion/Percheros/p-con-objetos.jpg" alt="img perchero" class="img-fluid rounded float-start shadow mb-5 bg-body "  data-aos="flip-up"></a>
+            <a href="./iluminacion.html"><img src="../img/iluminacion/veladores/v-tripode.jpg" alt="img velador" class="img-fluid rounded float-start shadow mb-5 bg-body"  data-aos="flip-up"></a>
+            <a href="./iluminacion.html"><img src="../img/iluminacion/lamparas_de_pie/tripode/tripode-blanco.jpg" alt="img Lampara de Pie" class="img-fluid rounded float-start shadow mb-5 bg-body"  data-aos="flip-up"></a>
         </section>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

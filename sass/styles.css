@@ -175,216 +175,136 @@ header nav .nav li:hover a {
     margin: 1rem;
   }
 }
-.cocina {
+main .cocina {
   display: grid;
-  grid-template-columns: 30% 70%;
-  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 3fr;
   grid-template-areas: "cocinaInfo cocinaImg";
-  padding: 1rem;
   gap: 1rem;
+  margin: 1rem;
 }
-.cocina .cocinaInfo {
-  grid-area: cocinaInfo;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-}
-.cocina .cocinaInfo h2 {
-  margin-right: 12rem;
-}
-.cocina .cocinaInfo .cocina--titulo {
-  margin-right: 19rem;
-}
-.cocina .cocinaInfo .cocinaPrecio {
-  display: flex;
-  justify-content: space-evenly;
-}
-.cocina .cocinaInfo .cocinaPrecio p {
-  margin-top: 1rem;
-  margin-right: 5rem;
-  transition: 0.5s;
-}
-.cocina .cocinaInfo .cocinaPrecio p:hover {
-  font-size: 2rem;
-}
-.cocina .cocinaImg {
-  grid-area: cocinaImg;
-  display: flex;
+main .cocina .cocinaImg {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 1rem;
-  width: 20rem;
 }
 
-.contacto {
-  display: flex;
-  gap: 1rem;
-  align-items: center;
-  padding: 1rem;
-  justify-content: space-evenly;
+@media screen and (max-width: 768px) {
+  main .cocina {
+    display: flex;
+    flex-direction: column;
+  }
 }
-.contacto .contactoInformacion {
+@media screen and (max-width: 480px) {
+  main .cocina .cocinaImg {
+    display: flex;
+    flex-direction: column;
+  }
+}
+main .contacto {
+  display: flex;
+  margin: 1rem;
+  gap: 1rem;
+}
+main .contacto .contactoInformacion {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  margin-left: 2rem;
 }
-.contacto .contactoInformacion p {
-  padding: 0.8rem;
-}
-.contacto .contactoInformacion .contactoRedes {
+main .contacto .contactoInformacion .contactoRedes-img {
   display: flex;
-  justify-content: space-evenly;
+  gap: 1rem;
+  width: 90px;
+  margin-left: 15rem;
 }
-.contacto .contactoInformacion .contactoRedes-img {
-  width: 3.5rem;
-  margin-top: 1rem;
-}
-.contacto .contactoInformacion .contactoRedes .wspContacto {
-  margin-top: 1rem;
+main .contacto form {
+  margin-left: 10rem;
 }
 
-.imgContacto {
+@media screen and (max-width: 768px) {
+  main {
+    margin: 1rem;
+  }
+  main .contacto {
+    flex-direction: column;
+  }
+  main .contacto form {
+    margin-left: 0;
+  }
+}
+footer .imgContacto {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 1rem;
-}
-
-.decoracion {
-  padding: 1rem;
+  display: flex;
+  align-items: center;
   margin: 1rem;
 }
-.decoracion .perchero {
-  display: grid;
-  grid-template-columns: 30% 70%;
-  grid-template-areas: "percheroInfo percheroImg";
-}
-.decoracion .perchero .percheroInfo {
-  grid-area: percheroInfo;
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  justify-content: space-around;
-}
-.decoracion .perchero .percheroInfo .percheroTitulo {
-  margin-left: 8rem;
-}
-.decoracion .perchero .percheroInfo .percheroPrecio {
-  display: flex;
-  margin-top: -10rem;
-  margin-left: 2rem;
-}
-.decoracion .perchero .percheroInfo .percheroPrecio p {
-  margin-top: 1rem;
-  margin-left: 2rem;
-}
-.decoracion .perchero .percheroImg {
-  grid-area: percheroImg;
-  display: flex;
-  gap: 3rem;
-  width: 25rem;
-  margin-left: 5rem;
-}
-.decoracion .portaMacetas {
-  display: grid;
-  grid-template-columns: 30% 70%;
-  grid-template-areas: "macetasInfo macetasImg";
-}
-.decoracion .portaMacetas .macetasInfo {
-  grid-area: macetasInfo;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-}
-.decoracion .portaMacetas .macetasInfo-titulo {
-  margin-top: 10rem;
-  margin-left: 5rem;
-}
-.decoracion .portaMacetas .macetasImg {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  margin: 2rem;
-  gap: 2rem;
-  width: 50rem;
-}
 
-.iluminacion {
-  padding: 1rem;
-}
-.iluminacion .lamparas {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  grid-template-areas: "precio  cromo" "precio  estante" "tripode tripode";
-  gap: 1rem;
+main .decoracion {
   margin: 1rem;
 }
-.iluminacion .lamparas h3 {
-  margin-bottom: 1rem;
-}
-.iluminacion .lamparas .lamparasPrecio {
-  grid-area: precio;
-  margin-left: 1rem;
-  margin-top: 2rem;
-}
-.iluminacion .lamparas .lamparasPrecio p {
-  margin-top: 6rem;
-}
-.iluminacion .lamparas .cromo {
-  grid-area: cromo;
-  display: flex;
-  flex-direction: column;
-  margin-left: 3rem;
-}
-.iluminacion .lamparas .cromo div {
-  display: flex;
-  gap: 3rem;
-  width: 40%;
-  margin-left: 3rem;
-}
-.iluminacion .lamparas .estante {
-  grid-area: estante;
-  display: flex;
-  flex-direction: column;
-  margin-left: 3rem;
-}
-.iluminacion .lamparas .estante div {
-  display: flex;
-  gap: 3rem;
-  width: 40%;
-  margin-left: 3rem;
-}
-.iluminacion .lamparas .tripode {
-  grid-area: tripode;
-  display: flex;
-  flex-direction: column;
-}
-.iluminacion .lamparas .tripode div {
-  display: flex;
-  gap: 3rem;
-  width: 20%;
-  margin-left: 4rem;
-}
-.iluminacion .veladores {
+main .decoracion .perchero {
   display: grid;
   grid-template-columns: 1fr 3fr;
-  grid-template-rows: 1fr;
-  grid-template-areas: "tituloVeladores imgVeladores";
-  padding: 1rem;
+  grid-template-areas: "percheroInfo percheroImg";
+  gap: 1rem;
 }
-.iluminacion .veladores .tituloVeladores {
-  grid-area: tituloVeladores;
+main .decoracion .perchero .percheroInfo {
+  grid-area: percheroInfo;
+  margin-top: 4rem;
 }
-.iluminacion .veladores .tituloVeladores h2 {
-  margin-top: 3rem;
-  margin-left: 3rem;
+main .decoracion .perchero .percheroInfo div {
+  margin: 2rem;
 }
-.iluminacion .veladores .tituloVeladores p {
-  margin-top: 13rem;
+main .decoracion .perchero .percheroInfo .percheroTitulo {
+  margin-left: 2rem;
 }
-.iluminacion .veladores .imgVeladores {
-  grid-area: imgVeladores;
-  display: flex;
-  width: 22%;
-  gap: 3rem;
+main .decoracion .perchero .percheroImg {
+  margin: 1rem;
+  grid-area: percheroImg;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+main .decoracion .portaMacetas {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-areas: "macetasInfo macetasImg";
+  gap: 1rem;
+}
+main .decoracion .portaMacetas .macetasInfo {
+  grid-area: macetasInfo;
+}
+main .decoracion .portaMacetas .macetasInfo div {
+  margin: 2rem;
+}
+main .decoracion .portaMacetas .macetasImg {
+  margin: 1rem;
+  grid-area: macetasImg;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
 }
 
+@media screen and (max-width: 768px) {
+  main .decoracion .perchero .percheroImg {
+    grid-template-columns: 1fr;
+  }
+  main .decoracion .portaMacetas .macetasImg {
+    grid-template-columns: 1fr;
+  }
+}
+@media screen and (max-width: 480px) {
+  main .decoracion .perchero {
+    display: flex;
+    flex-direction: column;
+  }
+  main .decoracion .portaMacetas {
+    display: flex;
+    flex-direction: column;
+  }
+}
 .linkContacto:hover {
   font-size: 1.5rem;
   color: rosybrown;

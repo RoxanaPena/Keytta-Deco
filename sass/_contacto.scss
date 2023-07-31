@@ -1,40 +1,54 @@
-.contacto {
-    display: flex;
-    gap: 1rem;
-    align-items: center;
-    padding: 1rem;
-    justify-content: space-evenly;
-
-    .contactoInformacion{
+main{
+    .contacto{
         display: flex;
-        flex-direction: column;
+        margin: 1rem;
+        gap: 1rem;
 
-        p{
-            padding: 0.8rem;
-        }
-
-        .contactoRedes{
+        .contactoInformacion{
             display: flex;
-            justify-content: space-evenly;
+            flex-direction: column;
+            justify-content: center;
+            margin-left: 2rem ;
 
-            &-img{
-                width: 3.5rem; 
-                margin-top: 1rem;
+            .contactoRedes-img{
+                display: flex;
+                gap: 1rem;
+                width: 90px;
+                margin-left: 15rem;
             }
-            .wspContacto{
-                margin-top: 1rem;
-            }
-
-
+        }
+        form{
+            margin-left: 10rem;
         }
     }
 }
-.imgContacto{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 1rem;
+
+@media screen and (max-width: 768px){
+    main{
+        margin: 1rem;
+        .contacto{
+            flex-direction: column;
+            
+            form{
+                margin-left: 0;
+            }
+        }
+    }
 }
 
+footer{
+
+    .imgContacto{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 1rem;
+        display: flex;
+        align-items: center;
+        margin: 1rem;
+        
+        
+    }
+}
 
 
 

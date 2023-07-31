@@ -1,46 +1,37 @@
-.cocina{
-    display: grid;
-    grid-template-columns: 30% 70%;
-    grid-template-rows: 1fr;
-    grid-template-areas: 
-    "cocinaInfo cocinaImg";
-    padding: 1rem;
-    gap: 1rem;
+main{
+    .cocina{
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        grid-template-areas: 
+        "cocinaInfo cocinaImg";
+        gap: 1rem;
+        margin: 1rem;
 
-
-    .cocinaInfo{
-        grid-area: cocinaInfo;
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-
-        h2{
-            margin-right: 12rem;
-        }
-        .cocina--titulo{
-            margin-right: 19rem;
-        }
-
-        .cocinaPrecio{
-            display: flex;
-            justify-content: space-evenly;
-
-            p{
-                margin-top: 1rem;
-                margin-right: 5rem;
-                transition: 0.5s;
-
-                &:hover{
-                    font-size: 2rem;
-                }
-            }
+        .cocinaImg{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 1rem;
         }
     }
-    .cocinaImg{
-        grid-area: cocinaImg;
-        display: flex;
-        gap: 1rem;
-        width: 20rem;
+
+}
+
+@media screen and (max-width: 768px){
+    main{
+        .cocina{
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}
+
+@media screen and (max-width: 480px){
+    main{
+        .cocina{
+            .cocinaImg{
+                display: flex;
+                flex-direction: column;
+            }
+        }
     }
 }

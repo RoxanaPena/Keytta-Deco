@@ -3,17 +3,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Noto+Sans+Cypro+Minoan&family=Nunito+Sans:wght@200&display=swap');
 
 @import "./variables";
-@import "./reset";
-@import "./header";
+@import "./listas/reset";
+@import "./listas/header";
 
 //pages
-@import "./nosotros";
-@import "./cocina";
-@import "./contacto";
-@import "./decoracion";
+@import "./listas/nosotros";
+@import "./listas/cocina";
+@import "./listas/contacto";
+@import "./listas/decoracion";
 @import "./iluminacion"; 
 @import "./informacion";
 
 
-@import "./article";
-@import "./footer";
+@import "./listas/article";
+@import "./listas/footer";
