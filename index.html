@@ -7,45 +7,56 @@
     <title>Keytta Deco - Artículos de Decoración</title>
     <link rel="shortcut icon" href="./img/logos/logo_favicon.jpg" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./sass/styles.css">
 
 </head>
 <body>
-    <header >
+    <header>
 
         <section>
             <img src="./img/logos/logo.jpg" alt="Logo Keytta Deco" class="logo img-fluid">
         </section>
         <nav>
             <ul class="nav">
-                <li class="rounded " ><a href="#parrafo">Nosotros</a></li>
-                <li class="rounded "><a href="./pages/iluminacion.html">Iluminación</a></li>
-                <li class="rounded "><a href="./pages/decoracion.html">Decoración</a></li>
-                <li class="rounded "><a href="./pages/cocina.html">Cocina</a></li>
-                <li class="rounded "><a href="./pages/contacto.html">Contacto</a></li>
+                <li class="rounded " data-aos="fade-down"><a href="#parrafo">Nosotros</a></li>
+                <li class="rounded " data-aos="fade-down"><a href="./pages/iluminacion.html">Iluminación</a></li>
+                <li class="rounded " data-aos="fade-down"><a href="./pages/decoracion.html">Decoración</a></li>
+                <li class="rounded " data-aos="fade-down"><a href="./pages/cocina.html">Cocina</a></li>
+                <li class="rounded " data-aos="fade-down"><a href="./pages/contacto.html">Contacto</a></li>
             </ul>
         </nav>
         
     </header>
     <main>
         <section>
-            <h1 class="titulo">KEYTTA DECO</h1>
+            <h1 class="titulo ">KEYTTA DECO</h1>
         </section>
         <section class="grilla" >
-            <p class="rounded parrafo" id="parrafo">Bienvenidos somos una empresa familiar dedicada al procesado de madera para la fabricación de diversos productos con distintos fines, tanto artículos o bienes de usabilidad práctica, como materiales semielaborados. Nos enfocamos en la satisfaccion de cada uno de los hogares mas exigentes.</p>
-            <a href="./pages/iluminacion.html" class="imgLampara">
-                <img src="./img/iluminacion/lamparas_de_pie/lamparas-de-pie.jpg" alt="Lampara de Pie" class="img-fluid shadow mb-5 bg-body" >
-            </a>
-            <a href="./pages/decoracion.html"  class="imgPerchero">
-                <img src="./img/decoracion/Percheros/p-con-objetos.jpg" alt="Perchero" class="img-fluid shadow mb-5 bg-body">
-            </a>
-            <a href="./pages/cocina.html" class="imgTabla">
-                <img src="./img/decoracion/Cocina/tc-arriba.jpg" alt="Tabla de Cocina" class="img-fluid shadow mb-5 bg-body" >
-            </a>
+            <div  class="rounded parrafo bounce-in-top" id="parrafo">
+                <p>Bienvenidos somos una empresa familiar dedicada al procesado de madera para la fabricación de diversos productos con 
+                    distintos fines, tanto artículos o bienes de usabilidad práctica, como materiales semielaborados. Nos enfocamos en la
+                    satisfaccion de cada uno de los hogares mas exigentes.</p> 
+            </div>
+            <div class="imgLampara" data-aos="zoom-out" >
+                <a href="./pages/iluminacion.html" >
+                    <img src="./img/iluminacion/lamparas_de_pie/lamparas-de-pie.jpg" alt="Lampara de Pie" class="img-fluid shadow bg-body rounded" >
+                </a>
+            </div>
+            <div class="imgPerchero" data-aos="zoom-out">
+                <a href="./pages/decoracion.html"  >
+                    <img src="./img/decoracion/Percheros/p-con-objetos.jpg" alt="Perchero" class="img-fluid shadow bg-body rounded">
+                </a>
+            </div>
+            <div class="imgTabla" data-aos="zoom-out">
+                <a href="./pages/cocina.html">
+                    <img src="./img/decoracion/Cocina/tc-arriba.jpg" alt="Tabla de Cocina" class="img-fluid shadow bg-body rounded" >
+                </a>
+            </div>
         </section>
     </main>
     
-    <article class="rounded">
+    <article class="rounded" data-aos="fade-down">
         <div>
             <a href="./pages/informacion.html"><p>¿Dudas sobre tu compra?</p></a>
         </div>
@@ -82,6 +93,9 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
