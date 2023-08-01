@@ -14,7 +14,15 @@ main{
                 .contactoRedes-img{
                     display: flex;
                     gap: 1rem;
-                    width: 150px;
+                    margin-top: 2rem;
+
+                    .img-redes{
+                        width: 5rem;
+            
+                    }
+                    .wsp{
+                        width: 3rem;
+                    }
                 }
             }
         }

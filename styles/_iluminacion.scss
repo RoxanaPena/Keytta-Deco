@@ -1,6 +1,6 @@
 main{
     .iluminacion{
-        margin: 1rem;
+        margin: 3rem;
         .lamparas{
             display: grid;
             grid-template-columns: 1fr 2fr;
@@ -8,7 +8,7 @@ main{
             .lamparasImg{
                 display: flex;
                 flex-direction: column;
-                margin: 1rem;
+                margin: 3rem;
 
                 .cromoImg{
                         display: flex;

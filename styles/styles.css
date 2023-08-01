@@ -114,6 +114,7 @@ header nav .nav li:hover a {
 }
 .grilla .imgTabla {
   grid-area: imgTabla;
+  margin-top: 1.8rem;
 }
 .grilla .imgPerchero {
   grid-area: imgPerchero;
@@ -256,7 +257,7 @@ main .decoracion .portaMacetas .macetasImg {
   }
 }
 main .iluminacion {
-  margin: 1rem;
+  margin: 3rem;
 }
 main .iluminacion .lamparas {
   display: grid;
@@ -265,7 +266,7 @@ main .iluminacion .lamparas {
 main .iluminacion .lamparas .lamparasImg {
   display: flex;
   flex-direction: column;
-  margin: 1rem;
+  margin: 3rem;
 }
 main .iluminacion .lamparas .lamparasImg .cromoImg {
   display: flex;
@@ -365,7 +366,13 @@ main .contacto .contactoInformacion .contactoRedes {
 main .contacto .contactoInformacion .contactoRedes .contactoRedes-img {
   display: flex;
   gap: 1rem;
-  width: 150px;
+  margin-top: 2rem;
+}
+main .contacto .contactoInformacion .contactoRedes .contactoRedes-img .img-redes {
+  width: 5rem;
+}
+main .contacto .contactoInformacion .contactoRedes .contactoRedes-img .wsp {
+  width: 3rem;
 }
 
 @media screen and (max-width: 480px) {
@@ -438,30 +445,12 @@ footer .redes {
   grid-area: redes;
   display: flex;
   justify-content: space-evenly;
-  animation: redes 0.8s infinite;
-}
-@keyframes redes {
-  0% {
-    transform: translate(0);
-  }
-  20% {
-    transform: translate(-2px, 2px);
-  }
-  40% {
-    transform: translate(-2px, -2px);
-  }
-  60% {
-    transform: translate(2px, 2px);
-  }
-  80% {
-    transform: translate(2px, -2px);
-  }
-  100% {
-    transform: translate(0);
-  }
 }
 footer .redes .img-redes {
-  width: 2.5rem;
+  width: 5rem;
+}
+footer .redes .wsp {
+  width: 3.3rem;
 }
 
 @media screen and (max-width: 768px) {
