@@ -1,8 +1,6 @@
 header{
     display: flex;
     align-items: center;
-    padding: 1rem;
-
     .logo{
         width: 10rem;
         -webkit-animation: rotate-diagonal-1 0.8s linear reverse both;
@@ -42,7 +40,6 @@ header{
         width: 100%;
 
         .nav{
-            gap: 1rem;
             display: flex;
             justify-content: space-evenly;
     
@@ -64,31 +61,21 @@ header{
     
     }
 }
+
+
 @media screen and (max-width: 768px){
     header{
         .nav{
             flex-direction: column;
+            align-items: stretch;
             text-align: center;
-            li{
-                margin: 0.1rem 3rem;
-            }
+            gap: 1rem;
+            padding: 1rem;
         }
     }
 }
 @media screen and (max-width: 480px){
     header{
         flex-direction: column;
-
-        .nav{
-
-            li{
-                padding: 0;
-                margin: 0;
-
-                a{
-                    width: 100%;
-                }
-            }
-        }
     }
 }

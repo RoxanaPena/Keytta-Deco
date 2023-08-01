@@ -1,0 +1,16 @@
+main{
+    .informacion{
+        section{
+            background-color: $colorVerde;
+            padding: 1rem;
+        }
+        a{
+            color: $colorMarron;
+        }
+    }
+}
+.linkContacto:hover{
+    font-size: 1.5rem;
+    color: rosybrown;
+    transition: 0.5s;
+}

@@ -2,41 +2,40 @@ main{
     .contacto{
         display: flex;
         margin: 1rem;
+        justify-content: space-evenly;
+        align-items: center;
         gap: 1rem;
 
         .contactoInformacion{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            margin-left: 2rem ;
-
-            .contactoRedes-img{
+            .contactoRedes{
                 display: flex;
-                gap: 1rem;
-                width: 90px;
-                margin-left: 15rem;
+                justify-content: space-between;
+
+                .contactoRedes-img{
+                    display: flex;
+                    gap: 1rem;
+                    width: 150px;
+                }
             }
-        }
-        form{
-            margin-left: 10rem;
         }
     }
 }
-
-@media screen and (max-width: 768px){
+@media screen and (max-width:480px){
     main{
-        margin: 1rem;
         .contacto{
             flex-direction: column;
-            
-            form{
-                margin-left: 0;
+            .contactoInformacion{
+                margin: 1rem;
             }
         }
     }
 }
 
 footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
 
     .imgContacto{
         display: grid;
