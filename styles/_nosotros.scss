@@ -146,8 +146,7 @@
 
 @media screen and (max-width: 768px) {
     .grilla{
-        display: flex;
-        flex-direction: column;
+        @include flex-column;
         margin: 1rem;
     }
 }

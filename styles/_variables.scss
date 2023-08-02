@@ -10,3 +10,11 @@ $tipografiaColor:#5b4215;
 //variables de transicion
 $transitionBoton: 0.4s;
 $transitionImg: 0.2s;
+
+
+//mixin
+@mixin flex-column {
+    display: flex;
+    flex-direction: column;
+}
+    

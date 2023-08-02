@@ -78,12 +78,10 @@ main{
     main{
         .decoracion{
             .perchero{
-                display: flex;
-                flex-direction: column;
+                @include flex-column;
             }
             .portaMacetas{
-                display: flex;
-                flex-direction: column;
+                @include flex-column;
             }
         }
     }

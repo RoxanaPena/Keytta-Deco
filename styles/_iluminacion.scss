@@ -6,8 +6,7 @@ main{
             grid-template-columns: 1fr 2fr;
 
             .lamparasImg{
-                display: flex;
-                flex-direction: column;
+                @include flex-column;
                 margin: 3rem;
 
                 .cromoImg{
@@ -53,8 +52,8 @@ main{
     main{
         .iluminacion{
             .lamparas{
-                display: flex;
-                flex-direction: column;
+                @include flex-column;
+
                 .lamparasPrecio{
                     display: grid;
                     grid-template-columns: 1fr 2fr 1fr;
@@ -101,8 +100,7 @@ main{
         .iluminacion{
             .lamparas{
                 .lamparasPrecio{
-                    display: flex;
-                    flex-direction: column;
+                    @include flex-column;
                 }
             }
         }
