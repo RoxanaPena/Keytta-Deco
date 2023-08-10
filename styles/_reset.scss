@@ -37,3 +37,20 @@ li {
     }   
 }
 
+
+.btn-color{
+    background-color: $colorBeige1;
+    border: $colorMarron;
+
+    &:hover{
+        background-color: $colorMarron;
+        border: $colorMarron;
+    }
+}
+
+.card-body{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1rem;
+}

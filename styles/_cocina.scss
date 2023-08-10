@@ -21,6 +21,10 @@ main{
     main{
         .cocina{
             @include flex-column;
+            .cocinaImg{
+                @include flex-column;
+
+            }
         }
     }
 }

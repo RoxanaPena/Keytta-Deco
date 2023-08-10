@@ -10,22 +10,19 @@ main{
                 margin: 3rem;
 
                 .cromoImg{
-                        display: flex;
-                        gap: 1rem;
-
-                        img{
-                            width: 50%;
-                        }
+                    margin: 2rem;
+                    gap: 1rem;
+                    display: flex;
+                    align-items: center;
                 }
                 .estanteImg{
-                        display: flex;
-                        gap: 1rem;
-
-                        img{
-                            width: 50%;
-                        }
+                    margin: 2rem;
+                    display: flex;
+                    gap: 1rem;
+                    align-items: center;
                 }
                 .tripodeImg{
+                    margin: 2rem;
                     display: grid;
                     grid-template-columns: 1fr 1fr;
                     grid-template-rows: 1fr 1fr;
@@ -41,8 +38,8 @@ main{
                 display: grid;
                 grid-template-columns: 1fr 1fr 1fr 1fr;
                 grid-template-rows: 1fr;
-                align-items: stretch;
                 gap: 1rem;
+                align-items: center;
             }
         }
     }
@@ -65,31 +62,22 @@ main{
                     }
                 }
                 .lamparasImg{
-                    .cromoImg{
-                        flex-direction: column;
-                        align-items: center;
 
-                        img{
-                            width: 60%;
-                        }
+                    .cromoImg{
+                        @include flex-column;
                     }
                     .estanteImg{
-                        flex-direction: column;
-                        align-items: center;
-
-                        img{
-                            width: 60%;
-                        }
+                        @include flex-column;
+                    }
+                    .tripodeImg{
+                        @include flex-column;
                     }
                 }
             }
 
             .veladores{
                 .imgVeladores{
-                    display: grid;
-                    grid-template-columns: 1fr 1fr;
-                    align-items: stretch;
-                    gap: 1rem;
+                    @include flex-column;
                 }
             }
         }

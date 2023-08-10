@@ -37,6 +37,22 @@ li {
   color: #ac8439;
 }
 
+.btn-color {
+  background-color: #efe2cb;
+  border: #ac8439;
+}
+.btn-color:hover {
+  background-color: #ac8439;
+  border: #ac8439;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 1rem;
+}
+
 header {
   display: flex;
   align-items: center;
@@ -147,6 +163,10 @@ main .cocina .cocinaImg {
     display: flex;
     flex-direction: column;
   }
+  main .cocina .cocinaImg {
+    display: flex;
+    flex-direction: column;
+  }
 }
 @media screen and (max-width: 480px) {
   main .cocina .cocinaImg {
@@ -198,6 +218,7 @@ main .decoracion .portaMacetas .macetasImg {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1rem;
+  align-items: center;
 }
 
 @media screen and (max-width: 768px) {
@@ -231,20 +252,19 @@ main .iluminacion .lamparas .lamparasImg {
   margin: 3rem;
 }
 main .iluminacion .lamparas .lamparasImg .cromoImg {
-  display: flex;
+  margin: 2rem;
   gap: 1rem;
-}
-main .iluminacion .lamparas .lamparasImg .cromoImg img {
-  width: 50%;
+  display: flex;
+  align-items: center;
 }
 main .iluminacion .lamparas .lamparasImg .estanteImg {
+  margin: 2rem;
   display: flex;
   gap: 1rem;
-}
-main .iluminacion .lamparas .lamparasImg .estanteImg img {
-  width: 50%;
+  align-items: center;
 }
 main .iluminacion .lamparas .lamparasImg .tripodeImg {
+  margin: 2rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
@@ -255,8 +275,8 @@ main .iluminacion .veladores .imgVeladores {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr;
-  align-items: stretch;
   gap: 1rem;
+  align-items: center;
 }
 
 @media screen and (max-width: 768px) {
@@ -274,24 +294,20 @@ main .iluminacion .veladores .imgVeladores {
     margin-bottom: 4rem;
   }
   main .iluminacion .lamparas .lamparasImg .cromoImg {
+    display: flex;
     flex-direction: column;
-    align-items: center;
-  }
-  main .iluminacion .lamparas .lamparasImg .cromoImg img {
-    width: 60%;
   }
   main .iluminacion .lamparas .lamparasImg .estanteImg {
+    display: flex;
     flex-direction: column;
-    align-items: center;
   }
-  main .iluminacion .lamparas .lamparasImg .estanteImg img {
-    width: 60%;
+  main .iluminacion .lamparas .lamparasImg .tripodeImg {
+    display: flex;
+    flex-direction: column;
   }
   main .iluminacion .veladores .imgVeladores {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: stretch;
-    gap: 1rem;
+    display: flex;
+    flex-direction: column;
   }
 }
 @media screen and (max-width: 480px) {
@@ -359,14 +375,6 @@ main .contacto .contactoInformacion .contactoRedes .contactoRedes-img .wsp {
   width: 3rem;
 }
 
-@media screen and (max-width: 480px) {
-  main .contacto {
-    flex-direction: column;
-  }
-  main .contacto .contactoInformacion {
-    margin: 1rem;
-  }
-}
 footer {
   display: flex;
   justify-content: center;
@@ -381,6 +389,17 @@ footer .imgContacto {
   margin: 1rem;
 }
 
+@media screen and (max-width: 480px) {
+  main .contacto {
+    flex-direction: column;
+  }
+  main .contacto .contactoInformacion {
+    margin: 1rem;
+  }
+  footer .imgContacto {
+    display: none;
+  }
+}
 article {
   display: flex;
   justify-content: space-evenly;
