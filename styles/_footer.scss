@@ -6,6 +6,7 @@ footer{
     grid-template-columns: 30% 70%;
     padding: 1rem;
     gap: 1rem;
+    background-color: $colorTransparente;
 
     .productos{
         grid-area: productos;
@@ -31,13 +32,16 @@ footer{
         grid-area: redes;
         display: flex;
         justify-content: space-evenly;
+        align-items: center;
 
-        .img-redes{
-            width: 5rem;
 
-        }
+        
         .wsp{
-            width: 3.3rem;
+            width: 3rem;
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+
         }
     }
 }

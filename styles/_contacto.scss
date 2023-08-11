@@ -1,14 +1,13 @@
 main{
+    
     .contacto{
+        @include color-fondo;
         display: flex;
-        margin: 1rem;
+        padding: 2rem;
         justify-content: space-evenly;
         align-items: center;
         gap: 1rem;
-        .form-check-input:checked {
-            background-color: $colorMarron;
-            border-color: $colorVerde;
-        }
+        
         .btn-primary{
             background-color: $colorMarron;
             border-color: $colorMarron;
@@ -36,58 +35,25 @@ main{
 
                 .contactoRedes-img{
                     display: flex;
-                    gap: 1rem;
-                    margin-top: 2rem;
-
-                    .img-redes{
-                        width: 5rem;
-            
-                    }
-                    .wsp{
-                        width: 3rem;
-                    }
+                    gap: 3rem;
+                    margin: 2rem;
+                    
                 }
             }
         }
     }
 }
 
-footer{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-
-    .imgContacto{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        gap: 1rem;
-        display: flex;
-        align-items: center;
-        margin: 1rem;
-        
-        
-    }
-}
-
-@media screen and (max-width:480px){
+@media screen and (max-width: 768px) {
     main{
         .contacto{
-            flex-direction: column;
-            .contactoInformacion{
-                margin: 1rem;
-            }
-
-        }
-    }
-
-    footer{
-    
-        .imgContacto{
-            display: none;
+            @include flex-column;
         }
     }
 }
+
+
+
 
 
 

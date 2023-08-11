@@ -10,14 +10,16 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../styles/styles.css">
+    <script src="https://kit.fontawesome.com/7f5f185f23.js" crossorigin="anonymous"></script>
+
 
 </head>
 <body>
-    <header>
+    <header class="logo-grid" >
         <section>
             <a href="../index.html"><img src="../img/logos/logo.jpg" alt="Logo de Keytta Deco" class="logo"></a>
         </section>
-        <nav>
+        <nav class="menu">
             <ul class="nav">
                 <li class="rounded"  data-aos="fade-down" ><a href="../index.html#parrafo">Nosotros</a></li>
                 <li class="rounded"  data-aos="fade-down"><a href="./iluminacion.html">Iluminación</a></li>
@@ -26,6 +28,12 @@
                 <li class="rounded"  data-aos="fade-down"><a href="./contacto.html">Contacto</a></li>
             </ul>
         </nav>
+        <section class="iconos">
+            <i class="fa-regular fa-heart fa-xl" style="color: #686850;"></i>
+            <i class="fa-solid fa-bag-shopping fa-xl" style="color:#686850;"></i>
+            <i class="fa-solid fa-user fa-xl" style="color: #686850;"></i>
+        </section>
+
     </header>
 
     <main>
@@ -34,22 +42,40 @@
         </section>
         <section class="iluminacion">
             <div class="lamparas">
-                <div class="lamparasPrecio">
+                <section class="infoLampara">
                     <div>
                         <h2>Lamparas de Pie</h2>
                         <P>Miden 160 cm. de alto, la base de aperturas de patas tienen 60 cm. de diámetro.</P>
+                        <p>La pantalla viene incluida, su medida es de 40 cm. de diámetro por 25 cm. de alto.</p>
+                        <div>
+                            <p>Vienen en color:</p>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                            <label class="form-check-label" for="gridRadios1">
+                                    Negro
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                            <label class="form-check-label" for="gridRadios2">
+                                    Blanco
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3">
+                            <label class="form-check-label" for="gridRadios3">
+                                Natural
+                            </label>
+                        </div>
+                        </div>
                     </div>
                     <div class="card shadow " style="width: 25rem;">
                         <div class="card-body">
                             <img src="../img/iluminacion/lamparas_de_pie/lamparas-de-pie.jpg" alt="lamparas de pie" class="img-fluid shadow mb-2" data-aos="zoom-out">
                             <a href="#" class="btn btn-primary btn-color">COMPRAR</a>
                         </div>
-                    </div>
-                    <div>
-                        <p>La pantalla viene incluida y tenemos tres colores BLANCO, NEGRO Y NATURAL.</p>
-                        <p>La medida es de 40 cm. de diámetro por 25 cm. de alto.</p>
-                    </div>
-                </div>
+                    </div>          
+                </section>
                 <section class="lamparasImg">
                     <div class="cromo">
                         <div >
@@ -85,7 +111,7 @@
                             </div>
                             <div class="card" >
                                 <div class="card-body" style="width: 24rem;">
-                                    <img src="../img/iluminacion/lamparas_de_pie/estante/estante-cerca.jpg" alt="Lampara estante cerca" class="img-fluid shadow mb-2" data-aos="zoom-out">
+                                    <img src="../img/iluminacion/lamparas_de_pie/estante/estante-cerca.jpg" alt="Lampara estante cerca" class="img-fluid shadow mb-2 lampCerca" data-aos="zoom-out">
                                     <a href="#" class="btn btn-primary btn-color">COMPRAR</a>
                                 </div>
                             </div>
@@ -126,33 +152,60 @@
                 </section>
             </div>
             <div class="veladores">
-                <div class="tituloVeladores">
-                    <h2>Veladores</h2>
-                    <p>Tienen 30 cm. de alto, la ápertura de sus patas tienen 20 cm. de diámetro.</p>
-                    <p>La pantalla viene incluida tiene 20 cm. de alto por 17 cm. de diámetro. Vienen en 3 colores BLANCO, NEGRO Y NATURAL.</p>
-                    <p>Precio por unidad $6.000 </p>
-                    <p>¡Como promo 2 unidades por $10.000 !</p>
+                <div class="infoVeladores">
+                    <div>
+                        <h2>Veladores</h2>
+                    </div>
+                    <div>
+                        <p>Tienen 30 cm. de alto, la ápertura de sus patas tienen 20 cm. de diámetro.</p>
+                        <p>La pantalla viene incluida tiene 20 cm. de alto por 17 cm. de diámetro.</p>
+                        <div>
+                            <p>Vienen en color:</p>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                            <label class="form-check-label" for="gridRadios1">
+                                    Negro
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                            <label class="form-check-label" for="gridRadios2">
+                                    Blanco
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3">
+                            <label class="form-check-label" for="gridRadios3">
+                                Natural
+                            </label>
+                        </div>
+                        </div>  
+                    </div>
+                    <div>
+                        <p>Precio por unidad $6.000 </p>
+                        <p>¡Como promo 2 unidades por $10.000 !</p>
+                    </div>
                 </div>
                 <div class="imgVeladores">
-                    <div class="card shadow">
+                    <div class="card shadow veladorUno">
                         <div class="card-body">
                             <img src="../img/iluminacion/veladores/v-base_de_cruz.jpg" alt="Velador Base de Cruz" class="baseCruz" class="img-fluid shadow mb-1" data-aos="zoom-out">
                             <a href="#" class="btn btn-primary btn-color">COMPRAR</a>
                         </div>
                     </div>
-                    <div class="card shadow " >
+                    <div class="card shadow veladorDos" >
                         <div class="card-body">
                             <img src="../img/iluminacion/veladores/v-conico.jpg" alt="Velador Conico" class="conico" class="img-fluid shadow mb-1" data-aos="zoom-out">
                             <a href="#" class="btn btn-primary btn-color ">COMPRAR</a>
                         </div>
                     </div>
-                    <div class="card shadow " >
+                    <div class="card shadow veladorTres" >
                         <div class="card-body">
                             <img src="../img/iluminacion/veladores/v-trapecio.jpg" alt="Velador Trapesio" class="trapecio" class="img-fluid shadow mb-1 " data-aos="zoom-out">
                             <a href="#" class="btn btn-primary btn-color">COMPRAR</a>
                         </div>
                     </div>
-                    <div class="card shadow " >
+                    <div class="card shadow veladorCuatro" >
                         <div class="card-body">
                             <img src="../img/iluminacion/veladores/v-tripode.jpg" alt="Velador Tripode" class="veladorTripode" class="img-fluid shadow mb-1 " data-aos="zoom-out">
                             <a href="#" class="btn btn-primary btn-color">COMPRAR</a>
@@ -165,13 +218,15 @@
 
     <article class="rounded" data-aos="fade-down">
         <div>
+            <i class="fa-solid fa-circle-info fa-lg" style="color: #686850;"></i>
             <a href="./informacion.html" target="_blank"><p>¿Dudas sobre tu compra?</p></a>
         </div>
         <div>
-            <a href="./informacion.html" target="_blank"><p>Formas de Pago</p></a>
-            
+            <i class="fa-solid fa-landmark fa-lg" style="color: #686850;"></i>
+            <a href="./informacion.html" target="_blank"><p>Formas de Pago</p></a>    
         </div>
         <div>
+            <i class="fa-regular fa-envelope fa-lg" style="color: #686850;"></i>
             <a href="./contacto.html"><p>¡Quiero Contactarme!</p></a>
         </div>
     </article>
@@ -194,12 +249,12 @@
             <p>Somos Keytta Deco una empresa de ventas de articulos para el hogar encontranos en Fiorito 1832, Lomas de Zamora</p>
         </section>
         <section class="redes">
-            <a href="https://www.instagram.com/keyttadeco/" target="_blank">
-                <img src="../img/logos/Instagram-Logo.jpg" alt="Imagen de Instagram" class="img-fluid img-redes">
+            <a href="https://www.instagram.com/keyttadeco/" target="_blank" class="instagram">
+                <i class="fa-brands fa-instagram fa-2xl" style="color:  #686850;" class="instagram"></i>
             </a>
-            <a >
-                <img src="../img/logos/whatsapp (1).png" alt="Imagen Whatsapp" class="img-fluid wsp">
-            </a>
+            <i class="fa-brands fa-facebook-f fa-xl" style="color:  #686850;" class="facebook" ></i>
+            <i class="fa-brands fa-facebook-messenger fa-xl"  style="color:  #686850;"></i>
+            <img src="../img/logos/whatsapp (1).png" alt="Imagen Whatsapp" class="img-fluid wsp">
         </section>
     </footer>
 

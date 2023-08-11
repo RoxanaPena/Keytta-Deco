@@ -10,14 +10,16 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../styles/styles.css">
+    <script src="https://kit.fontawesome.com/7f5f185f23.js" crossorigin="anonymous"></script>
+
 
 </head>
 <body>
     <header>
-        <section>
+        <section class="logo-grid">
             <a href="../index.html"><img src="../img/logos/logo.jpg" alt="Logo de Keytta Deco" class="logo"></a>
         </section>
-        <nav>
+        <nav class="menu">
             <ul class="nav">
                 <li class="rounded"  data-aos="fade-down" ><a href="../index.html#parrafo">Nosotros</a></li>
                 <li class="rounded"  data-aos="fade-down"><a href="./iluminacion.html">Iluminación</a></li>
@@ -26,6 +28,11 @@
                 <li class="rounded"  data-aos="fade-down"><a href="./contacto.html">Contacto</a></li>
             </ul>
         </nav>
+        <section class="iconos">
+            <i class="fa-regular fa-heart fa-xl" style="color: #686850;"></i>
+            <i class="fa-solid fa-bag-shopping fa-xl" style="color:#686850;"></i>
+            <i class="fa-solid fa-user fa-xl" style="color: #686850;"></i>
+        </section>
     </header>
 
     <main>
@@ -34,7 +41,9 @@
         </section>
         <section class="cocina">
             <div class="cocinaInfo">
-                <h2>Tabla de Cocina</h2>
+                <div>                   
+                    <h2>Tabla de Cocina</h2>
+                </div>
                 <div>
                     <h3>Material</h3>
                     <p>Realizamos nuestros productos con la mayor dedicacion, esta tabla de cocina fue realizada con madera de Pinotea, tallada y barnizada con productos de primera calidad. Sus medidas son 40cm X 30cm.</p>
@@ -59,7 +68,7 @@
                 </div>
                 <div class="card shadow mb-3" style="width: 18rem;">
                     <div class="card-body">
-                        <img src="../img/decoracion/Cocina/tc-decostado.jpg" alt="Tabla de cocina 3" class="img-fluid shadow mb-3" data-aos="zoom-out" >
+                        <img src="../img/decoracion/Cocina/tc-decostado.jpg" alt="Tabla de cocina 3" class="img-fluid shadow mb-3" data-aos="zoom-out">
                         <a href="#" class="btn btn-primary btn-color">COMPRAR</a>
                     </div>
                 </div>
@@ -69,13 +78,16 @@
 
     <article class="rounded" data-aos="fade-down">
         <div>
+            <i class="fa-solid fa-circle-info fa-lg" style="color: #686850;"></i>
             <a href="./informacion.html" target="_blank"><p>¿Dudas sobre tu compra?</p></a>
         </div>
         <div>
+            <i class="fa-solid fa-landmark fa-lg" style="color: #686850;"></i>
             <a href="./informacion.html" target="_blank"><p>Formas de Pago</p></a>
             
         </div>
         <div>
+            <i class="fa-regular fa-envelope fa-lg" style="color: #686850;"></i>
             <a href="./contacto.html"><p>¡Quiero Contactarme!</p></a>
         </div>
     </article>
@@ -98,12 +110,12 @@
             <p>Somos Keytta Deco una empresa de ventas de articulos para el hogar encontranos en Fiorito 1832, Lomas de Zamora</p>
         </section>
         <section class="redes">
-            <a href="https://www.instagram.com/keyttadeco/" target="_blank">
-                <img src="../img/logos/Instagram-Logo.jpg" alt="Imagen de Instagram" class="img-fluid img-redes">
+            <a href="https://www.instagram.com/keyttadeco/" target="_blank" class="instagram">
+                <i class="fa-brands fa-instagram fa-2xl" style="color:  #686850;" ></i>
             </a>
-            <a >
-                <img src="../img/logos/whatsapp (1).png" alt="Imagen Whatsapp" class="img-fluid wsp">
-            </a>
+            <i class="fa-brands fa-facebook-f fa-xl" style="color:  #686850;" class="facebook" ></i>
+            <i class="fa-brands fa-facebook-messenger fa-xl"  style="color:  #686850;"></i>
+            <img src="../img/logos/whatsapp (1).png" alt="Imagen Whatsapp" class="img-fluid wsp">
         </section>
     </footer>
 

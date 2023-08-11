@@ -17,4 +17,19 @@ $transitionImg: 0.2s;
     display: flex;
     flex-direction: column;
 }
-    
+@mixin color-fondo{
+    color: rgb(74, 57, 3);
+    background-color: $colorTransparente;
+}
+
+@mixin txt-center{
+        @include flex-column;
+        align-items: center;
+        gap: 3rem;
+}
+
+@mixin flex-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+}

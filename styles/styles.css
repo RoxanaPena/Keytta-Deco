@@ -46,16 +46,23 @@ li {
   border: #ac8439;
 }
 
-.card-body {
-  display: flex;
-  flex-direction: column;
-  align-items: stretch;
-  gap: 1rem;
+.instagram {
+  transition: 0.4s;
+}
+
+.instagram:hover {
+  font-size: 1.5rem;
+}
+
+.form-check-input:checked {
+  background-color: #ac8439;
+  border-color: #ac8439;
 }
 
 header {
   display: flex;
   align-items: center;
+  justify-content: space-evenly;
 }
 header .logo {
   width: 10rem;
@@ -72,39 +79,54 @@ header .logo {
     transform: rotate3d(1, 1, 0, -360deg);
   }
 }
-header nav {
-  width: 100%;
-}
 header nav .nav {
-  display: flex;
-  justify-content: space-evenly;
+  gap: 1rem;
 }
 header nav .nav li {
+  padding: 0.4rem 1.5rem;
   background-color: #efe2cb;
-  transition: 0.4s;
-  padding: 0.7rem 2rem;
 }
 header nav .nav li:hover {
-  font-size: 1.2rem;
   background-color: #fdf9f4;
+  font-size: 1.2rem;
+  transition: 0.4s;
 }
-header nav .nav li:hover a {
-  color: #ac8439;
+header .iconos i {
+  margin: 1rem;
 }
 
 @media screen and (max-width: 768px) {
-  header .nav {
-    flex-direction: column;
-    align-items: stretch;
-    text-align: center;
-    gap: 1rem;
-    padding: 1rem;
+  header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "logo iconos" "menu menu";
+  }
+  header .logo-grid {
+    grid-area: logo;
+  }
+  header .menu {
+    grid-area: menu;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  header .iconos {
+    grid-area: iconos;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
 @media screen and (max-width: 480px) {
-  header {
+  header .menu .nav {
     display: flex;
     flex-direction: column;
+    align-items: stretch;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 1rem;
+    gap: 0.3rem;
   }
 }
 .grilla {
@@ -113,7 +135,7 @@ header nav .nav li:hover a {
   grid-template-rows: 1fr;
   grid-template-areas: "parrafo parrafo  imgPerchero" "imgLampara imgTabla  imgPerchero ";
   gap: 0.7rem;
-  padding: 1rem;
+  padding: 2rem;
 }
 .grilla .parrafo {
   grid-area: parrafo;
@@ -145,12 +167,20 @@ header nav .nav li:hover a {
   }
 }
 main .cocina {
+  color: rgb(74, 57, 3);
+  background-color: #fdf9f4;
   display: grid;
   grid-template-columns: 1fr 3fr;
   grid-template-areas: "cocinaInfo cocinaImg";
   gap: 1rem;
-  margin: 1.5rem 1.5rem 0 1.5rem;
+  padding: 2rem;
   align-items: center;
+}
+main .cocina .cocinaInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
 }
 main .cocina .cocinaImg {
   display: grid;
@@ -175,7 +205,9 @@ main .cocina .cocinaImg {
   }
 }
 main .decoracion {
-  margin: 1rem;
+  color: rgb(74, 57, 3);
+  background-color: #fdf9f4;
+  padding: 2rem;
 }
 main .decoracion .perchero {
   display: grid;
@@ -185,13 +217,10 @@ main .decoracion .perchero {
 }
 main .decoracion .perchero .percheroInfo {
   grid-area: percheroInfo;
-  margin-top: 4rem;
-}
-main .decoracion .perchero .percheroInfo div {
-  margin: 2rem;
-}
-main .decoracion .perchero .percheroInfo .percheroTitulo {
-  margin-left: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
 }
 main .decoracion .perchero .percheroImg {
   margin: 1rem;
@@ -208,9 +237,10 @@ main .decoracion .portaMacetas {
 }
 main .decoracion .portaMacetas .macetasInfo {
   grid-area: macetasInfo;
-}
-main .decoracion .portaMacetas .macetasInfo div {
-  margin: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
 }
 main .decoracion .portaMacetas .macetasImg {
   margin: 1rem;
@@ -240,78 +270,69 @@ main .decoracion .portaMacetas .macetasImg {
   }
 }
 main .iluminacion {
-  margin: 3rem;
+  color: rgb(74, 57, 3);
+  background-color: #fdf9f4;
+  padding: 3rem;
 }
-main .iluminacion .lamparas {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
+main .iluminacion .lamparas .infoLampara {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
-main .iluminacion .lamparas .lamparasImg {
+main .iluminacion .lamparas .lamparasImg .cromo {
+  padding: 5rem;
+}
+main .iluminacion .lamparas .lamparasImg .cromo .cromoImg {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+main .iluminacion .lamparas .lamparasImg .estante {
+  padding: 5rem;
+}
+main .iluminacion .lamparas .lamparasImg .estante .estanteImg {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin: 2rem;
+}
+main .iluminacion .lamparas .lamparasImg .tripode {
+  padding: 2rem;
+}
+main .iluminacion .lamparas .lamparasImg .tripode .tripodeImg {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+main .iluminacion .veladores {
+  margin-top: 2rem;
+}
+main .iluminacion .veladores .infoVeladores {
   display: flex;
   flex-direction: column;
-  margin: 3rem;
-}
-main .iluminacion .lamparas .lamparasImg .cromoImg {
-  margin: 2rem;
-  gap: 1rem;
-  display: flex;
   align-items: center;
-}
-main .iluminacion .lamparas .lamparasImg .estanteImg {
-  margin: 2rem;
-  display: flex;
-  gap: 1rem;
-  align-items: center;
-}
-main .iluminacion .lamparas .lamparasImg .tripodeImg {
-  margin: 2rem;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  gap: 1rem;
-  align-items: center;
+  gap: 3rem;
 }
 main .iluminacion .veladores .imgVeladores {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr;
+  display: flex;
   gap: 1rem;
   align-items: center;
 }
 
 @media screen and (max-width: 768px) {
-  main .iluminacion .lamparas {
+  .iluminacion .lamparas .lamparasImg .cromo .cromoImg {
     display: flex;
     flex-direction: column;
   }
-  main .iluminacion .lamparas .lamparasPrecio {
-    display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
-    gap: 2rem;
-    align-items: center;
-  }
-  main .iluminacion .lamparas .lamparasPrecio h2 {
-    margin-bottom: 4rem;
-  }
-  main .iluminacion .lamparas .lamparasImg .cromoImg {
+  .iluminacion .lamparas .lamparasImg .estante .estanteImg {
     display: flex;
     flex-direction: column;
   }
-  main .iluminacion .lamparas .lamparasImg .estanteImg {
+  .iluminacion .lamparas .lamparasImg .tripode .tripodeImg {
     display: flex;
     flex-direction: column;
   }
-  main .iluminacion .lamparas .lamparasImg .tripodeImg {
-    display: flex;
-    flex-direction: column;
-  }
-  main .iluminacion .veladores .imgVeladores {
-    display: flex;
-    flex-direction: column;
-  }
-}
-@media screen and (max-width: 480px) {
-  main .iluminacion .lamparas .lamparasPrecio {
+  .iluminacion .veladores .imgVeladores {
     display: flex;
     flex-direction: column;
   }
@@ -331,15 +352,13 @@ main .informacion a {
 }
 
 main .contacto {
+  color: rgb(74, 57, 3);
+  background-color: #fdf9f4;
   display: flex;
-  margin: 1rem;
+  padding: 2rem;
   justify-content: space-evenly;
   align-items: center;
   gap: 1rem;
-}
-main .contacto .form-check-input:checked {
-  background-color: #ac8439;
-  border-color: #d4d4c8;
 }
 main .contacto .btn-primary {
   background-color: #ac8439;
@@ -365,48 +384,28 @@ main .contacto .contactoInformacion .contactoRedes {
 }
 main .contacto .contactoInformacion .contactoRedes .contactoRedes-img {
   display: flex;
-  gap: 1rem;
-  margin-top: 2rem;
-}
-main .contacto .contactoInformacion .contactoRedes .contactoRedes-img .img-redes {
-  width: 5rem;
-}
-main .contacto .contactoInformacion .contactoRedes .contactoRedes-img .wsp {
-  width: 3rem;
+  gap: 3rem;
+  margin: 2rem;
 }
 
-footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-footer .imgContacto {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 1rem;
-  display: flex;
-  align-items: center;
-  margin: 1rem;
-}
-
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
   main .contacto {
+    display: flex;
     flex-direction: column;
-  }
-  main .contacto .contactoInformacion {
-    margin: 1rem;
-  }
-  footer .imgContacto {
-    display: none;
   }
 }
 article {
   display: flex;
   justify-content: space-evenly;
   background-color: #d4d4c8;
+  padding: 0.5rem;
+  padding-top: 2rem;
 }
 article div {
-  padding-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
 }
 article div a :hover {
   font-size: 1.2rem;
@@ -417,6 +416,7 @@ article div a :hover {
   article {
     flex-direction: column;
     align-items: center;
+    gap: 1.8rem;
   }
 }
 footer {
@@ -425,6 +425,7 @@ footer {
   grid-template-columns: 30% 70%;
   padding: 1rem;
   gap: 1rem;
+  background-color: #fdf9f4;
 }
 footer .productos {
   grid-area: productos;
@@ -448,12 +449,13 @@ footer .redes {
   grid-area: redes;
   display: flex;
   justify-content: space-evenly;
-}
-footer .redes .img-redes {
-  width: 5rem;
+  align-items: center;
 }
 footer .redes .wsp {
-  width: 3.3rem;
+  width: 3rem;
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
 }
 
 @media screen and (max-width: 768px) {

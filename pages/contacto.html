@@ -10,13 +10,15 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../styles/styles.css">
+    <script src="https://kit.fontawesome.com/7f5f185f23.js" crossorigin="anonymous"></script>
+
 </head>
 <body>
     <header>
-        <section>
+        <section class="logo-grid">
             <a href="../index.html"><img src="../img/logos/logo.jpg" alt="Logo de Keytta Deco" class="logo "></a>
         </section>
-        <nav>
+        <nav class="menu">
             <ul class="nav">
                 <li class="rounded"  data-aos="fade-down" ><a href="../index.html#parrafo">Nosotros</a></li>
                 <li class="rounded"  data-aos="fade-down"><a href="./iluminacion.html">Iluminación</a></li>
@@ -25,6 +27,11 @@
                 <li class="rounded"  data-aos="fade-down"><a href="./contacto.html">Contacto</a></li>
             </ul>
         </nav>
+        <section class="iconos">
+            <i class="fa-regular fa-heart fa-xl" style="color: #686850;"></i>
+            <i class="fa-solid fa-bag-shopping fa-xl" style="color:#686850;"></i>
+            <i class="fa-solid fa-user fa-xl" style="color: #686850;"></i>
+        </section>
     </header>
 
     <main>
@@ -38,12 +45,17 @@
                 <div class="contactoRedes">
                     <p>Podes contactarnos a traves de:</p>
                     <div class="contactoRedes-img">
-                            <a href="https://www.instagram.com/keyttadeco/" target="_blank">
-                                <img src="../img/logos/Instagram-Logo.jpg" alt="Imagen de Instagram" class="img-fluid img-redes">
+                        <div>
+                            <a href="https://www.instagram.com/keyttadeco/" target="_blank" class="instagram">
+                                <i class="fa-brands fa-instagram fa-2xl" style="color:  #686850;" ></i>
                             </a>
-                            <a >
-                                <img src="../img/logos/whatsapp (1).png" alt="Imagen Whatsapp" class="img-fluid wsp">
-                            </a>
+                        </div>
+                        <div>
+                            <i class="fa-brands fa-facebook-f fa-xl" style="color:  #686850;" class="facebook" ></i>
+                        </div>
+                        <div>
+                            <i class="fa-brands fa-facebook-messenger fa-xl"  style="color:  #686850;"></i>
+                        </div>
                     </div>
                 </div>
             </div> 
@@ -111,18 +123,21 @@
 
     <article class="rounded" data-aos="fade-down">
         <div>
+            <i class="fa-solid fa-circle-info fa-lg" style="color: #686850;"></i>
             <a href="./informacion.html" target="_blank"><p>¿Dudas sobre tu compra?</p></a>
         </div>
         <div>
+            <i class="fa-solid fa-landmark fa-lg" style="color: #686850;"></i>
             <a href="./informacion.html" target="_blank"><p>Formas de Pago</p></a>
             
         </div>
         <div>
+            <i class="fa-regular fa-envelope fa-lg" style="color: #686850;"></i>
             <a href="./contacto.html"><p>¡Quiero Contactarme!</p></a>
         </div>
     </article>
 
-    <footer>
+    <footer class="footer-contacto">
         <section class="productos">
             <h3>Productos</h3>
             <nav>
@@ -134,33 +149,7 @@
                     <li><a href="./iluminacion.html">Veladores</a></li>
                 </ul>
             </nav>
-        </section>
-        <section class="imgContacto">
-            <div class="card shadow mb-3">
-                <div class="card-body">
-                    <img src="../img/decoracion/Cocina/tc-arriba.jpg" alt="img Tabla de cocina" class="img-fluid rounded float-start shadow mb-3">
-                    <a href="./cocina.html" class="btn btn-primary btn-color">COMPRAR</a>
-                </div>
-            </div>
-            <div class="card shadow mb-3">
-                <div class="card-body">
-                    <img src="../img/decoracion/Percheros/p-con-objetos.jpg" alt="img perchero" class="img-fluid rounded float-start shadow">
-                    <a href="./decoracion.html" class="btn btn-primary btn-color">COMPRAR</a>
-                </div>
-            </div>
-            <div class="card shadow mb-3">
-                <div class="card-body">
-                    <img src="../img/iluminacion/veladores/v-tripode.jpg" alt="img velador" class="img-fluid rounded float-start shadow mb-3">
-                    <a href="./iluminacion.html" class="btn btn-primary btn-color">COMPRAR</a>
-                </div>
-            </div>
-            <div class="card shadow mb-3">
-                <div class="card-body">
-                    <img src="../img/iluminacion/lamparas_de_pie/tripode/tripode-blanco.jpg" alt="img Lampara de Pie" class="img-fluid rounded float-start shadow mb-3">
-                    <a href="./iluminacion.html" class="btn btn-primary btn-color">COMPRAR</a>
-                </div>
-            </div>
-        </section>
+        </section>  
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>

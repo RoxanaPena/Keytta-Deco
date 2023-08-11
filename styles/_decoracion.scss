@@ -1,6 +1,7 @@
 main{
     .decoracion{
-        margin: 1rem;
+        @include color-fondo;
+        padding: 2rem;
 
         .perchero{
             display: grid;
@@ -11,14 +12,7 @@ main{
 
             .percheroInfo{
             grid-area: percheroInfo;
-            margin-top: 4rem;
-            div{
-                margin: 2rem;
-            }
-
-                .percheroTitulo{
-                    margin-left: 2rem;
-                }
+            @include txt-center;
             }
             .percheroImg{
                 margin: 1rem;
@@ -37,10 +31,9 @@ main{
 
             .macetasInfo{
                 grid-area: macetasInfo;
+                @include txt-center;
 
-                div{
-                    margin: 2rem;
-                }
+
             }
 
             .macetasImg{
