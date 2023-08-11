@@ -234,6 +234,7 @@ main .decoracion .portaMacetas {
   grid-template-columns: 1fr 3fr;
   grid-template-areas: "macetasInfo macetasImg";
   gap: 1rem;
+  padding: 2rem;
 }
 main .decoracion .portaMacetas .macetasInfo {
   grid-area: macetasInfo;
@@ -386,6 +387,18 @@ main .contacto .contactoInformacion .contactoRedes .contactoRedes-img {
   display: flex;
   gap: 3rem;
   margin: 2rem;
+}
+
+.footer-contacto .footer-redes {
+  display: flex;
+  flex-direction: column;
+  padding: 3rem;
+}
+.footer-contacto .footer-redes .wsp {
+  width: 3rem;
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
 }
 
 @media screen and (max-width: 768px) {

@@ -28,6 +28,7 @@ main{
             grid-template-areas: 
             "macetasInfo macetasImg";
             gap: 1rem;
+            padding: 2rem;
 
             .macetasInfo{
                 grid-area: macetasInfo;

@@ -43,6 +43,19 @@ main{
         }
     }
 }
+.footer-contacto{
+    .footer-redes{
+        display: flex;
+        flex-direction: column;
+        padding: 3rem;
+        .wsp{
+            width: 3rem;
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+        }
+    }
+}
 
 @media screen and (max-width: 768px) {
     main{
